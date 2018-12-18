@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=TOCN
+Comment=TOCN P2P Cryptocurrency
+Exec=tourium-qt %u
+Terminal=false
+Type=Application
+Icon=tourium128
+MimeType=x-scheme-handler/tourium;
+Categories=Office;Finance;
+Name[en_US]=tourium-qt.desktop

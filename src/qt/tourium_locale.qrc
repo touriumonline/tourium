@@ -1,0 +1,20 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/tourium_bg.qm</file>
+        <file alias="de">locale/tourium_de.qm</file>
+        <file alias="en">locale/tourium_en.qm</file>
+        <file alias="es">locale/tourium_es.qm</file>
+        <file alias="fi">locale/tourium_fi.qm</file>
+        <file alias="fr">locale/tourium_fr.qm</file>
+        <file alias="it">locale/tourium_it.qm</file>
+        <file alias="ja">locale/tourium_ja.qm</file>
+        <file alias="pl">locale/tourium_pl.qm</file>
+        <file alias="pt">locale/tourium_pt.qm</file>
+        <file alias="ru">locale/tourium_ru.qm</file>
+        <file alias="sk">locale/tourium_sk.qm</file>
+        <file alias="sv">locale/tourium_sv.qm</file>
+        <file alias="vi">locale/tourium_vi.qm</file>
+        <file alias="zh_CN">locale/tourium_zh_CN.qm</file>
+        <file alias="zh_TW">locale/tourium_zh_TW.qm</file>
+    </qresource>
+</RCC>
