@@ -1,7 +1,8 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers 
-// Copyright (c) 2018 The Tourium developers
+// Copyright (c) 2015-2017 The ALQO developers
+// Copyright (c) 2017-2018 The Tourium developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -171,7 +172,7 @@ Value importaddress(const Array& params, bool fHelp)
         std::vector<unsigned char> data(ParseHex(params[0].get_str()));
         script = CScript(data.begin(), data.end());
     } else {
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid TOCN address or script");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Tourium address or script");
     }
 
     string strLabel = "";
@@ -313,7 +314,7 @@ Value dumpprivkey(const Array& params, bool fHelp)
             "\nReveals the private key corresponding to 'touriumaddress'.\n"
             "Then the importprivkey can be used with this output\n"
             "\nArguments:\n"
-            "1. \"touriumaddress\"   (string, required) The tourium address for the private key\n"
+            "1. \"touriumaddress\"   (string, required) The Tourium address for the private key\n"
             "\nResult:\n"
             "\"key\"                (string) The private key\n"
             "\nExamples:\n" +
@@ -324,7 +325,7 @@ Value dumpprivkey(const Array& params, bool fHelp)
     string strAddress = params[0].get_str();
     CBitcoinAddress address;
     if (!address.SetString(strAddress))
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid TOCN address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Tourium address");
     CKeyID keyID;
     if (!address.GetKeyID(keyID))
         throw JSONRPCError(RPC_TYPE_ERROR, "Address does not refer to a key");
@@ -367,7 +368,7 @@ Value dumpwallet(const Array& params, bool fHelp)
     std::sort(vKeyBirth.begin(), vKeyBirth.end());
 
     // produce output
-    file << strprintf("# Wallet dump created by TOCN %s (%s)\n", CLIENT_BUILD, CLIENT_DATE);
+    file << strprintf("# Wallet dump created by Tourium %s (%s)\n", CLIENT_BUILD, CLIENT_DATE);
     file << strprintf("# * Created on %s\n", EncodeDumpTime(GetTime()));
     file << strprintf("# * Best block at time of backup was %i (%s),\n", chainActive.Height(), chainActive.Tip()->GetBlockHash().ToString());
     file << strprintf("#   mined on %s\n", EncodeDumpTime(chainActive.Tip()->GetBlockTime()));
@@ -400,7 +401,7 @@ Value bip38encrypt(const Array& params, bool fHelp)
             "bip38encrypt \"touriumaddress\"\n"
             "\nEncrypts a private key corresponding to 'touriumaddress'.\n"
             "\nArguments:\n"
-            "1. \"touriumaddress\"   (string, required) The tourium address for the private key (you must hold the key already)\n"
+            "1. \"touriumaddress\"   (string, required) The Tourium address for the private key (you must hold the key already)\n"
             "2. \"passphrase\"   (string, required) The passphrase you want the private key to be encrypted with - Valid special chars: !#$%&'()*+,-./:;<=>?`{|}~ \n"
             "\nResult:\n"
             "\"key\"                (string) The encrypted private key\n"
@@ -413,7 +414,7 @@ Value bip38encrypt(const Array& params, bool fHelp)
 
     CBitcoinAddress address;
     if (!address.SetString(strAddress))
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid TOCN address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Tourium address");
     CKeyID keyID;
     if (!address.GetKeyID(keyID))
         throw JSONRPCError(RPC_TYPE_ERROR, "Address does not refer to a key");

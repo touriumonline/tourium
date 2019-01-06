@@ -2,7 +2,8 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers 
-// Copyright (c) 2018 The Tourium developers
+// Copyright (c) 2015-2017 The ALQO developers
+// Copyright (c) 2017-2018 The Xuma developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -42,7 +43,7 @@ using namespace boost;
 using namespace std;
 
 #if defined(NDEBUG)
-#error "Tourium cannot be compiled without assertions."
+#error "Xuma cannot be compiled without assertions."
 #endif
 
 /**
@@ -96,7 +97,7 @@ static void CheckBlockIndex();
 /** Constant stuff for coinbase transactions we create: */
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "Tourium Signed Message:\n";
+const string strMessageMagic = "Xuma Signed Message:\n";
 
 // Internal stuff
 namespace
@@ -1652,6 +1653,7 @@ int64_t GetBlockValue(int nHeight)
 
 }
 
+
 int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount)
 {
 	if (Params().NetworkID() == CBaseChainParams::TESTNET) {
@@ -1671,8 +1673,7 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
 }
 bool IsInitialBlockDownload()
 {
-    return false;
-	LOCK(cs_main);
+    LOCK(cs_main);
     if (fImporting || fReindex || chainActive.Height() < Checkpoints::GetTotalBlocksEstimate())
         return true;
     static bool lockIBDState = false;
@@ -2053,7 +2054,7 @@ static CCheckQueue<CScriptCheck> scriptcheckqueue(128);
 
 void ThreadScriptCheck()
 {
-    RenameThread("tourium-scriptch");
+    RenameThread("xuma-scriptch");
     scriptcheckqueue.Thread();
 }
 
@@ -2087,7 +2088,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
         return state.DoS(100, error("ConnectBlock() : PoS period not active"),
             REJECT_INVALID, "PoS-early");
 
-    if (Params().LAST_POW_BLOCK() > 0 && pindex->nHeight > Params().LAST_POW_BLOCK() && block.IsProofOfWork())
+    if (pindex->nHeight > Params().LAST_POW_BLOCK() && block.IsProofOfWork())
         return state.DoS(100, error("ConnectBlock() : PoW period ended"),
             REJECT_INVALID, "PoW-ended");
 
@@ -2105,17 +2106,17 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     // Now that the whole chain is irreversibly beyond that time it is applied to all blocks except the
     // two in the chain that violate it. This prevents exploiting the issue against nodes in their
     // initial block download.
-    bool fEnforceBIP30 = (!pindex->phashBlock) || // Enforce on CreateNewBlock invocations which don't have a hash.
-                         !((pindex->nHeight == 91842 && pindex->GetBlockHash() == uint256("0x00000000000a4d0a398161ffc163c503763b1f4360639393e0e4c8e300e0caec")) ||
-                             (pindex->nHeight == 91880 && pindex->GetBlockHash() == uint256("0x00000000000743f190a18c5577a3c2d2a1f610ae9601ac046a38084ccb7cd721")));
-    if (fEnforceBIP30) {
+    //bool fEnforceBIP30 = (!pindex->phashBlock) || // Enforce on CreateNewBlock invocations which don't have a hash.
+    //                     !((pindex->nHeight == 91842 && pindex->GetBlockHash() == uint256("0x00000000000a4d0a398161ffc163c503763b1f4360639393e0e4c8e300e0caec")) ||
+    //                         (pindex->nHeight == 91880 && pindex->GetBlockHash() == uint256("0x00000000000743f190a18c5577a3c2d2a1f610ae9601ac046a38084ccb7cd721")));
+    //if (fEnforceBIP30) {
         BOOST_FOREACH (const CTransaction& tx, block.vtx) {
             const CCoins* coins = view.AccessCoins(tx.GetHash());
             if (coins && !coins->IsPruned())
                 return state.DoS(100, error("ConnectBlock() : tried to overwrite transaction"),
                     REJECT_INVALID, "bad-txns-BIP30");
         }
-    }
+    //}
 
     // BIP16 didn't become active until Apr 1 2012
     int64_t nBIP16SwitchTime = 1333238400;
@@ -2199,9 +2200,9 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     pindex->nMint = nValueOut - nValueIn + nFees;
     pindex->nMoneySupply = nMoneySupplyPrev + nValueOut - nValueIn;
 
-    CAmount blockValue = GetBlockValue(pindex->pprev->nHeight);
-    CAmount nExpectedMint =  nFees + blockValue + GetMasternodePayment(pindex->pprev->nHeight, blockValue, Params().MaxMnCollateral());
-    if (pindex->pprev->nHeight > 4200 && !IsBlockValueValid(block, nExpectedMint, pindex->nMint)) {
+    //lost-fee-issue
+    CAmount nExpectedMint = GetBlockValue(pindex->pprev->nHeight) + nFees;
+    if (!IsBlockValueValid(block, nExpectedMint, pindex->nMint)) {
         return state.DoS(100,
             error("ConnectBlock() : reward pays too much (actual=%s vs limit=%s)",
                 FormatMoney(pindex->nMint), FormatMoney(nExpectedMint)),
@@ -3270,6 +3271,8 @@ bool ContextualCheckBlock(const CBlock& block, CValidationState& state, CBlockIn
         if (!IsFinalTx(tx, nHeight, block.GetBlockTime())) {
             return state.DoS(10, error("%s : contains a non-final transaction", __func__), REJECT_INVALID, "bad-txns-nonfinal");
         }
+	
+
 
     return true;
 }
@@ -3465,12 +3468,8 @@ bool ProcessNewBlock(CValidationState& state, CNode* pfrom, CBlock* pblock, CDis
         }
     }
 
-    while (true) {
-        TRY_LOCK(cs_main, lockMain);
-        if (!lockMain) {
-            MilliSleep(50);
-            continue;
-        }
+    {
+        LOCK(cs_main);   // Replaces the former TRY_LOCK loop because busy waiting wastes too much resources
 
         MarkBlockAsReceived(pblock->GetHash());
         if (!checked) {
@@ -3486,7 +3485,6 @@ bool ProcessNewBlock(CValidationState& state, CNode* pfrom, CBlock* pblock, CDis
         CheckBlockIndex();
         if (!ret)
             return error("%s : AcceptBlock FAILED", __func__);
-        break;
     }
 
     if (!ActivateBestChain(state, pblock))
@@ -3531,7 +3529,6 @@ bool TestBlockValidity(CValidationState& state, const CBlock& block, CBlockIndex
     if (!CheckBlock(block, state, fCheckPOW, fCheckMerkleRoot))
         return false;
 	///AAAA
-
     if (!ContextualCheckBlock(block, state, pindexPrev))
         return false;
 
@@ -5370,24 +5367,15 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
 int ActiveProtocol()
 {
 
-    // SPORK_14 was used for 70710. Leave it 'ON' so they don't see < 70710 nodes. They won't react to SPORK_15
-    // messages because it's not in their code
 /*
     if (IsSporkActive(SPORK_14_NEW_PROTOCOL_ENFORCEMENT)) {
-        if (chainActive.Tip()->nHeight >= Params().ModifierUpgradeBlock())
-            return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
+        return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
     }
-
     return MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT;
 */
 
-
-    // SPORK_15 is used for 70910. Nodes < 70910 don't see it and still get their protocol version via SPORK_14 and their 
-    // own ModifierUpgradeBlock()
- 
     if (IsSporkActive(SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2))
-            return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
-
+        return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
     return MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT;
 }
 
@@ -5786,14 +5774,6 @@ std::string CBlockFileInfo::ToString() const
     return strprintf("CBlockFileInfo(blocks=%u, size=%u, heights=%u...%u, time=%s...%s)", nBlocks, nSize, nHeightFirst, nHeightLast, DateTimeStrFormat("%Y-%m-%d", nTimeFirst), DateTimeStrFormat("%Y-%m-%d", nTimeLast));
 }
 
-CTxOut GetPrevOut(const COutPoint& out)
-{
-    CTransaction tx;
-    uint256 hashBlock;
-    if (GetTransaction(out.hash, tx, hashBlock, true))
-        return tx.vout[out.n];
-    return CTxOut();
-}
 
 class CMainCleanup
 {

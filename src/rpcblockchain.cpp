@@ -2,7 +2,8 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers 
-// Copyright (c) 2018 The Tourium developers
+// Copyright (c) 2015-2017 The ALQO developers
+// Copyright (c) 2017-2018 The Tourium developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -30,7 +31,7 @@ double GetDifficulty(const CBlockIndex* blockindex)
         if (chainActive.Tip() == NULL)
             return 1.0;
         else
-            blockindex = GetLastBlockIndex(chainActive.Tip(), false);
+            blockindex = chainActive.Tip();
     }
 
     int nShift = (blockindex->nBits >> 24) & 0xff;
@@ -133,19 +134,16 @@ Value getbestblockhash(const Array& params, bool fHelp)
 
 Value getdifficulty(const Array& params, bool fHelp)
 {
-    
-
     if (fHelp || params.size() != 0)
         throw runtime_error(
             "getdifficulty\n"
-            "Returns the difficulty as a multiple of the minimum difficulty.");
+            "\nReturns the proof-of-work difficulty as a multiple of the minimum difficulty.\n"
+            "\nResult:\n"
+            "n.nnn       (numeric) the proof-of-work difficulty as a multiple of the minimum difficulty.\n"
+            "\nExamples:\n" +
+            HelpExampleCli("getdifficulty", "") + HelpExampleRpc("getdifficulty", ""));
 
-    CBlockIndex* pindexBest = chainActive.Tip();
-    Object obj;
-    obj.push_back(Pair("proof-of-work",        GetDifficulty()));
-    obj.push_back(Pair("proof-of-stake",       GetDifficulty(GetLastBlockIndex(pindexBest, true))));
-    obj.push_back(Pair("search-interval",      (int)nLastCoinStakeSearchInterval));
-    return obj;
+    return GetDifficulty();
 }
 
 
@@ -166,7 +164,7 @@ Value getrawmempool(const Array& params, bool fHelp)
             "{                           (json object)\n"
             "  \"transactionid\" : {       (json object)\n"
             "    \"size\" : n,             (numeric) transaction size in bytes\n"
-            "    \"fee\" : n,              (numeric) transaction fee in tourium\n"
+            "    \"fee\" : n,              (numeric) transaction fee in TOCN\n"
             "    \"time\" : n,             (numeric) local time transaction entered pool in seconds since 1 Jan 1970 GMT\n"
             "    \"height\" : n,           (numeric) block height when transaction entered pool\n"
             "    \"startingpriority\" : n, (numeric) priority when transaction entered pool\n"
@@ -400,14 +398,14 @@ Value gettxout(const Array& params, bool fHelp)
             "{\n"
             "  \"bestblock\" : \"hash\",    (string) the block hash\n"
             "  \"confirmations\" : n,       (numeric) The number of confirmations\n"
-            "  \"value\" : x.xxx,           (numeric) The transaction value in btc\n"
+            "  \"value\" : x.xxx,           (numeric) The transaction value in TOCN\n"
             "  \"scriptPubKey\" : {         (json object)\n"
             "     \"asm\" : \"code\",       (string) \n"
             "     \"hex\" : \"hex\",        (string) \n"
             "     \"reqSigs\" : n,          (numeric) Number of required signatures\n"
             "     \"type\" : \"pubkeyhash\", (string) The type, eg pubkeyhash\n"
-            "     \"addresses\" : [          (array of string) array of tourium addresses\n"
-            "     \"touriumaddress\"   	 	(string) tourium address\n"
+            "     \"addresses\" : [          (array of string) array of Tourium addresses\n"
+            "     \"Touriumaddress\"   	 	(string) Tourium address\n"
             "        ,...\n"
             "     ]\n"
             "  },\n"

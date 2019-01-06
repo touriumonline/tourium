@@ -10,7 +10,7 @@
 
 /**
  * CBaseChainParams defines the base parameters (shared between tourium-cli and touriumd)
- * of a given instance of the TOCN system.
+ * of a given instance of the Tourium system.
  */
 class CBaseChainParams
 {
@@ -20,7 +20,6 @@ public:
         TESTNET,
         REGTEST,
         UNITTEST,
-
         MAX_NETWORK_TYPES
     };
 

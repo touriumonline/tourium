@@ -62,12 +62,12 @@
         <translation>Vastaanottava osoite</translation>
     </message>
     <message>
-        <source>These are your TOCN addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Nämä ovat TOCN osoitteesi maksujen lähetykseen. Tarkista aina lähetettävä määrä ja vastaanottajan osoite ennen kuin lähetät varoja.</translation>
+        <source>These are your Tourium addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Nämä ovat Tourium osoitteesi maksujen lähetykseen. Tarkista aina lähetettävä määrä ja vastaanottajan osoite ennen kuin lähetät varoja.</translation>
     </message>
     <message>
-        <source>These are your TOCN addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Nämä ovat TOCN osoitteesi suoritusten vastaanottamiseen. Suositellaan että annat uuden osoitteen kullekin siirtotapahtumalle.</translation>
+        <source>These are your Tourium addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Nämä ovat Tourium osoitteesi suoritusten vastaanottamiseen. Suositellaan että annat uuden osoitteen kullekin siirtotapahtumalle.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,8 +176,8 @@
         <translation>Vahvista lompakon salaus</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR DNET&lt;/b&gt;!</source>
-        <translation>Varoitus: Jos salaat lompakon ja unohdat salasanan, &lt;b&gt;MENETÄT KAIKKI DNETisi&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TOCN&lt;/b&gt;!</source>
+        <translation>Varoitus: Jos salaat lompakon ja unohdat salasanan, &lt;b&gt;MENETÄT KAIKKI TOCNisi&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -188,8 +188,8 @@
         <translation>Lompakko salattu</translation>
     </message>
     <message>
-        <source>TOCN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your capracoins from being stolen by malware infecting your computer.</source>
-        <translation>TOCN sulkeutuu nyt salauksen viimeistelyä varten. Muista että salaus pelkästään ei voi estää XBZiesi varastamista jos koneesi saastuu haittaohjelmilla tai viruksilla.</translation>
+        <source>Tourium will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Touriums from being stolen by malware infecting your computer.</source>
+        <translation>Tourium sulkeutuu nyt salauksen viimeistelyä varten. Muista että salaus pelkästään ei voi estää Touriumiesi varastamista jos koneesi saastuu haittaohjelmilla tai viruksilla.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -255,16 +255,16 @@
         <translation>L&amp;ähetä</translation>
     </message>
     <message>
-        <source>Send coins to a TOCN address</source>
-        <translation>Lähetä varoja TOCN osoitteeseen</translation>
+        <source>Send coins to a Tourium address</source>
+        <translation>Lähetä varoja Tourium osoitteeseen</translation>
     </message>
     <message>
         <source>&amp;Receive</source>
         <translation>&amp;Vastaanota</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and capracoin: URIs)</source>
-        <translation>Pyydä maksuja (Luo QR koodit ja TOCN: URIt)</translation>
+        <source>Request payments (generates QR codes and TOCN:URIs)</source>
+        <translation>Pyydä maksuja (Luo QR koodit ja TOCN:URIt)</translation>
     </message>
     <message>
         <source>&amp;Transactions</source>
@@ -303,8 +303,8 @@
         <translation>&amp;Asetukset...</translation>
     </message>
     <message>
-        <source>Modify configuration options for TOCN</source>
-        <translation>Muuta TOCN asetuksia</translation>
+        <source>Modify configuration options for Tourium</source>
+        <translation>Muuta Tourium asetuksia</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -312,7 +312,7 @@
     </message>
     <message>
         <source>Show or hide the main Window</source>
-        <translation>Näytä tai piilota TOCN pääikkuna</translation>
+        <translation>Näytä tai piilota Tourium pääikkuna</translation>
     </message>
     <message>
         <source>&amp;Encrypt Wallet...</source>
@@ -355,16 +355,16 @@
         <translation>&amp;Allekirjoita Viesti...</translation>
     </message>
     <message>
-        <source>Sign messages with your TOCN addresses to prove you own them</source>
-        <translation>Allekirjoita viestit TOCN osoitteillasi todistaaksesi että omistat ne</translation>
+        <source>Sign messages with your Tourium addresses to prove you own them</source>
+        <translation>Allekirjoita viestit Tourium osoitteillasi todistaaksesi että omistat ne</translation>
     </message>
     <message>
         <source>&amp;Verify message...</source>
         <translation>&amp;Tarkista Viesti...</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified TOCN addresses</source>
-        <translation>Tarkista viestit ollaksesi varma että ne on allekirjoitettu määritetyillä TOCN osoitteilla</translation>
+        <source>Verify messages to ensure they were signed with specified Tourium addresses</source>
+        <translation>Tarkista viestit ollaksesi varma että ne on allekirjoitettu määritetyillä Tourium osoitteilla</translation>
     </message>
     <message>
         <source>&amp;Information</source>
@@ -443,8 +443,8 @@
         <translation>Avaa &amp;URI...</translation>
     </message>
     <message>
-        <source>Open a capracoin: URI or payment request</source>
-        <translation>Avaa TOCN: URI tai maksupyyntö</translation>
+        <source>Open a TOCN:URI or payment request</source>
+        <translation>Avaa TOCN:URI tai maksupyyntö</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -463,7 +463,7 @@
         <translation>Synkronoidaan lisätietoja: %p%</translation>
     </message>
     <message>
-        <source>Show the Tourium Core help message to get a list with possible TOCN command-line options</source>
+        <source>Show the Tourium Core help message to get a list with possible Tourium command-line options</source>
         <translation>Näytä Tourium Core ohjelista komentorivin valinnoista</translation>
     </message>
     <message>
@@ -487,8 +487,8 @@
         <translation>Välilehtipalkki</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to TOCN network</source>
-        <translation><numerusform>%n aktiivinen yhteys TOCN verkkoon</numerusform><numerusform>%n aktiivista yhteyttä TOCN verkkoon</numerusform></translation>
+        <source>%n active connection(s) to Tourium network</source>
+        <translation><numerusform>%n aktiivinen yhteys Tourium verkkoon</numerusform><numerusform>%n aktiivista yhteyttä Tourium verkkoon</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -864,11 +864,11 @@ Osoite: %4
         <translation>Valitse yksityisyyden taso.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 1000 DNET</source>
+        <source>Use 2 separate masternodes to mix funds up to 1000 TOCN</source>
         <translation>Käytä 2 erillistä masternodea sekoittaaksesi varoja</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 1000 DNET</source>
+        <source>Use 8 separate masternodes to mix funds up to 1000 TOCN</source>
         <translation>Käytä 8 erillistä masternodea sekoittaaksesi varoja</translation>
     </message>
     <message>
@@ -876,16 +876,16 @@ Osoite: %4
         <translation>Käytä 16 erillistä masternodea</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 DNET to anonymize 1000 DNET</source>
-        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 DNET kun anonymisoidaan 1000 DNET</translation>
+        <source>This option is the quickest and will cost about ~0.025 TOCN to anonymize 1000 TOCN</source>
+        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 TOCN kun anonymisoidaan 1000 TOCN</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 DNET to anonymize 1000 DNET</source>
-        <translation>Tämä vaihtoehto on keskinopea ja maksaa noin ~0.05 DNET kun anonymisoidaan 1000 DNET</translation>
+        <source>This option is moderately fast and will cost about 0.05 TOCN to anonymize 1000 TOCN</source>
+        <translation>Tämä vaihtoehto on keskinopea ja maksaa noin ~0.05 TOCN kun anonymisoidaan 1000 TOCN</translation>
     </message>
     <message>
-        <source>0.1 DNET per 1000 DNET you anonymize.</source>
-        <translation>0.1 DNET maksu per 1000 DNET jonka anonymisoit.</translation>
+        <source>0.1 TOCN per 1000 TOCN you anonymize.</source>
+        <translation>0.1 TOCN maksu per 1000 TOCN jonka anonymisoit.</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
@@ -896,16 +896,16 @@ Osoite: %4
         <translation>Obfuscate Asetukset</translation>
     </message>
     <message>
-        <source>Obfuscate was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening TOCN's configuration screen.</source>
-        <translation>Obfuscate on asetettu perusasetuksiin (%1 and 2 kierrosta). Voit muuttaa asetuksia milloin vain TOCN asetuksista.</translation>
+        <source>Obfuscate was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Tourium's configuration screen.</source>
+        <translation>Obfuscate on asetettu perusasetuksiin (%1 and 2 kierrosta). Voit muuttaa asetuksia milloin vain Tourium asetuksista.</translation>
     </message>
     <message>
-        <source>Obfuscate was successfully set to high (%1 and 8 rounds). You can change this at any time by opening TOCN's configuration screen.</source>
-        <translation>Obfuscate on asetettu keskitason asetuksiin (%1 and 8 kierrosta). Voit muuttaa asetuksia milloin vain TOCN asetuksista.</translation>
+        <source>Obfuscate was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Tourium's configuration screen.</source>
+        <translation>Obfuscate on asetettu keskitason asetuksiin (%1 and 8 kierrosta). Voit muuttaa asetuksia milloin vain Tourium asetuksista.</translation>
     </message>
     <message>
-        <source>Obfuscate was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening TOCN's configuration screen.</source>
-        <translation>Obfuscate on asetettu maksimitason asetuksiin (%1 and 16 kierrosta). Voit muuttaa asetuksia milloin vain TOCN asetuksista.</translation>
+        <source>Obfuscate was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Tourium's configuration screen.</source>
+        <translation>Obfuscate on asetettu maksimitason asetuksiin (%1 and 16 kierrosta). Voit muuttaa asetuksia milloin vain Tourium asetuksista.</translation>
     </message>
 </context>
 <context>
@@ -947,8 +947,8 @@ Osoite: %4
         <translation>Muokkaa lähettävää osoitetta</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid TOCN address.</source>
-        <translation>Annettu osoite "%1" ei ole pätevä TOCN osoite.</translation>
+        <source>The entered address "%1" is not a valid Tourium address.</source>
+        <translation>Annettu osoite "%1" ei ole pätevä Tourium osoite.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1057,7 +1057,7 @@ Osoite: %4
 Varoitus: Jos käytät käyttöjärjestelmää (Live os) suoraan usb, dvd tai cd levyltä, ohjaa talletettava data eri levyasemalle turvalliseen paikkaan.</translation>
     </message>
     <message>
-        <source>Tourium Core will download and store a copy of the TOCN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>Tourium Core will download and store a copy of the Tourium block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation>Tourium Core lataa ja tallettaa kopion lohkoketjusta. Vähintään %1GB dataa talletetaan tähän hakemistoon, ja se myös kasvaa ajan myötä. Myös lompakko talletetaan tähän hakemistoon.</translation>
     </message>
     <message>
@@ -1123,12 +1123,12 @@ Varoitus: Jos käytät käyttöjärjestelmää (Live os) suoraan usb, dvd tai cd
         <translation>&amp;Yleiset</translation>
     </message>
     <message>
-        <source>Automatically start TOCN after logging in to the system.</source>
-        <translation>Käynnistä TOCN automaattisesti kun järjestelmään kirjaudutaan.</translation>
+        <source>Automatically start Tourium after logging in to the system.</source>
+        <translation>Käynnistä Tourium automaattisesti kun järjestelmään kirjaudutaan.</translation>
     </message>
     <message>
-        <source>&amp;Start TOCN on system login</source>
-        <translation>&amp;Käynnistä TOCN järjestelmään kirjauduttaessa</translation>
+        <source>&amp;Start Tourium on system login</source>
+        <translation>&amp;Käynnistä Tourium järjestelmään kirjauduttaessa</translation>
     </message>
     <message>
         <source>Size of &amp;database cache</source>
@@ -1155,8 +1155,8 @@ Varoitus: Jos käytät käyttöjärjestelmää (Live os) suoraan usb, dvd tai cd
         <translation>Tämä määrä toimii rajana keskeytykselle kun Obfuscate anonymisointi sen saavuttaa.</translation>
     </message>
     <message>
-        <source>Amount of TOCN to keep anonymized</source>
-        <translation>TOCN määrä joka pidetään anonymisoituna</translation>
+        <source>Amount of Tourium to keep anonymized</source>
+        <translation>Tourium määrä joka pidetään anonymisoituna</translation>
     </message>
     <message>
         <source>W&amp;allet</source>
@@ -1175,8 +1175,8 @@ Varoitus: Jos käytät käyttöjärjestelmää (Live os) suoraan usb, dvd tai cd
         <translation>Salli sisään tulevat yhteydet</translation>
     </message>
     <message>
-        <source>Connect to the TOCN network through a SOCKS5 proxy.</source>
-        <translation>Kytkeydy TOCN verkkoon käyttäen SOCKS5 proxy:a.</translation>
+        <source>Connect to the Tourium network through a SOCKS5 proxy.</source>
+        <translation>Kytkeydy Tourium verkkoon käyttäen SOCKS5 proxy:a.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1207,8 +1207,8 @@ Varoitus: Jos käytät käyttöjärjestelmää (Live os) suoraan usb, dvd tai cd
         <translation>&amp;Verkko</translation>
     </message>
     <message>
-        <source>Automatically open the TOCN client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Avaa automaattisesti TOCN asiakasohjelmalle portti reitittimeen. Tämä toimii vain jos reitittimesi tukee UPnP:tä ja se on käytössä.</translation>
+        <source>Automatically open the Tourium client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Avaa automaattisesti Tourium asiakasohjelmalle portti reitittimeen. Tämä toimii vain jos reitittimesi tukee UPnP:tä ja se on käytössä.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1244,7 +1244,7 @@ Varoitus: Jos käytät käyttöjärjestelmää (Live os) suoraan usb, dvd tai cd
     </message>
     <message>
         <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
-        <translation>Ikkunaa suljettaessa pienennä TOCN asiakasohjelman ikkuna lopettamatta itse ohjelmaa. Kun tämä asetus on valittuna, ohjelman voi sulkea vain valitsemalla Lopeta ohjelman valikosta.</translation>
+        <translation>Ikkunaa suljettaessa pienennä Tourium asiakasohjelman ikkuna lopettamatta itse ohjelmaa. Kun tämä asetus on valittuna, ohjelman voi sulkea vain valitsemalla Lopeta ohjelman valikosta.</translation>
     </message>
     <message>
         <source>M&amp;inimize on close</source>
@@ -1259,14 +1259,14 @@ Varoitus: Jos käytät käyttöjärjestelmää (Live os) suoraan usb, dvd tai cd
         <translation>&amp;Käyttöliittymän kieli</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting TOCN.</source>
-        <translation>Käyttöliittymän kieli asetetaan tässä, Asetus tulee voimaan kun TOCN asiakasohjelma käynnistetään uudelleen.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Tourium.</source>
+        <translation>Käyttöliittymän kieli asetetaan tässä, Asetus tulee voimaan kun Tourium asiakasohjelma käynnistetään uudelleen.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</source>
+https://www.transifex.com/touriumcoin/tourium-wallet-translations/</source>
         <translation>Puuttuuko sopiva kieli tai käännös on kesken? Auta käännöstyössä täällä:
-https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</translation>
+https://www.transifex.com/touriumcoin/tourium-wallet-translations/</translation>
     </message>
     <message>
         <source>User Interface Theme:</source>
@@ -1348,8 +1348,8 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
         <translation>Lomake</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the TOCN network after a connection is established, but this process has not completed yet.</source>
-        <translation>Näytetyt tiedot eivät välttämättä ole ajan tasalla.&lt;br&gt;Lompakkosi synkronoituu automaattisesti TOCN verkkoon kun&lt;br&gt;yhteys on muodostettu, mutta tämä prosessi ei vielä ole valmis.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Tourium network after a connection is established, but this process has not completed yet.</source>
+        <translation>Näytetyt tiedot eivät välttämättä ole ajan tasalla.&lt;br&gt;Lompakkosi synkronoituu automaattisesti Tourium verkkoon kun&lt;br&gt;yhteys on muodostettu, mutta tämä prosessi ei vielä ole valmis.</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1432,8 +1432,8 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
         <translation>Määrä ja Kierrokset:</translation>
     </message>
     <message>
-        <source>0 DNET / 0 Rounds</source>
-        <translation>0 DNET / 0 Kierrosta</translation>
+        <source>0 TOCN / 0 Rounds</source>
+        <translation>0 TOCN / 0 Kierrosta</translation>
     </message>
     <message>
         <source>Submitted Denom:</source>
@@ -1569,8 +1569,8 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
         <translation>Maksupyyntövirhe</translation>
     </message>
     <message>
-        <source>Cannot start capracoin: click-to-pay handler</source>
-        <translation>Ei voi käynnistää XBZia: click-to-pay handler</translation>
+        <source>Cannot start TOCN: click-to-pay handler</source>
+        <translation>Ei voi käynnistää TOCNia: click-to-pay handler</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1589,8 +1589,8 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
         <translation>Virheellinen maksuosoite %1</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid TOCN address or malformed URI parameters.</source>
-        <translation>URI:a ei voida jäsentää! Tämä voi johtua virheellisestä TOCN osoitteesta tai virheellisestä URI:n muuttujasta. </translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Tourium address or malformed URI parameters.</source>
+        <translation>URI:a ei voida jäsentää! Tämä voi johtua virheellisestä Tourium osoitteesta tai virheellisestä URI:n muuttujasta. </translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -1675,8 +1675,8 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
         <translation>Määrä</translation>
     </message>
     <message>
-        <source>Enter a TOCN address (e.g. %1)</source>
-        <translation>Syötä TOCN osoite (esim. %1)</translation>
+        <source>Enter a Tourium address (e.g. %1)</source>
+        <translation>Syötä Tourium osoite (esim. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1765,8 +1765,8 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
         <translation>Yhteyksien määrä</translation>
     </message>
     <message>
-        <source>Open the TOCN debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Avaa TOCN debug lokitiedosto nykyisestä datahakemistosta. Tämä saattaa kestää muutaman sekunnin isoilla tiedostoilla.</translation>
+        <source>Open the Tourium debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Avaa Tourium debug lokitiedosto nykyisestä datahakemistosta. Tämä saattaa kestää muutaman sekunnin isoilla tiedostoilla.</translation>
     </message>
     <message>
         <source>&amp;Open</source>
@@ -1977,8 +1977,8 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>Ulos:</translation>
     </message>
     <message>
-        <source>Welcome to the TOCN RPC console.</source>
-        <translation>Tervetuloa TOCN RPC konsoliin.</translation>
+        <source>Welcome to the Tourium RPC console.</source>
+        <translation>Tervetuloa Tourium RPC konsoliin.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -2040,8 +2040,8 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>&amp;Uudelleenkäytä vastaanottavaa osoitetta (ei suositella)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the TOCN network.</source>
-        <translation>Valinnainen viesti liitettäväksi maksupyyntöön, joka näytetään kun pyyntö on avattu.&lt;br&gt;Huomio: Viestiä ei lähetetä maksun mukana TOCN verkkoon.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Tourium network.</source>
+        <translation>Valinnainen viesti liitettäväksi maksupyyntöön, joka näytetään kun pyyntö on avattu.&lt;br&gt;Huomio: Viestiä ei lähetetä maksun mukana Tourium verkkoon.</translation>
     </message>
     <message>
         <source>&amp;Message:</source>
@@ -2052,8 +2052,8 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>Valinnainen nimi liitetään uuteen vastaanottavaan osoitteeseen.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the TOCN network.</source>
-        <translation>Valinnainen viesti liitettäväksi maksupyyntöön, joka näytetään kun pyyntö on avattu.&lt;br&gt;Huomio: Viestiä ei lähetetä maksun mukana TOCN verkkoon.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Tourium network.</source>
+        <translation>Valinnainen viesti liitettäväksi maksupyyntöön, joka näytetään kun pyyntö on avattu.&lt;br&gt;Huomio: Viestiä ei lähetetä maksun mukana Tourium verkkoon.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -2297,7 +2297,7 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>Jos mukautettu siirtomaksu on asetettu 1000 duff ja siirtotapahtuma on vain 250 tavua,&lt;br /&gt;tällöin "per kilotavu" maksaa vain 250 duffs siirtomaksun, kun taas "yhteensä vähintään" maksaa 1000 duffs.&lt;br /&gt;Siirtotapahtumat jotka ovat isompia kuin kilotavu, molemmat maksaa "per kilotavu".</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for capracoin transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Tourium transactions than the network can process.</source>
         <translation>Minimi siirtomaksun maksaminen on ok niin kauan kun siirtotapahtumien määrä on pienempi kuin tila lohkoissa.&lt;br /&gt;Mutta ota huomioon että tämä voi johtaa siirtotapahtumaan jota ei vahvisteta koskaan, jos siirtotapahtumia on enemmän kuin verkko voi käsitellä.</translation>
     </message>
     <message>
@@ -2501,8 +2501,8 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>Maksa vain minimi siirtomaksu %1</translation>
     </message>
     <message>
-        <source>Warning: Invalid TOCN address</source>
-        <translation>Varoitus: Virheellinen TOCN osoite</translation>
+        <source>Warning: Invalid Tourium address</source>
+        <translation>Varoitus: Virheellinen Tourium osoite</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2524,8 +2524,8 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>Maksun &amp;saaja:</translation>
     </message>
     <message>
-        <source>The TOCN address to send the payment to</source>
-        <translation>TOCN osoite johon maksu lähetetään</translation>
+        <source>The Tourium address to send the payment to</source>
+        <translation>Tourium osoite johon maksu lähetetään</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2564,8 +2564,8 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>Viesti:</translation>
     </message>
     <message>
-        <source>A message that was attached to the capracoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the TOCN network.</source>
-        <translation>Viesti joka liitettiin TOCN: URI joka talletetaan siirtotapahtuman kanssa viitteeksi sinulle. Huomio: Tätä viestiä ei lähetetä TOCN verkkoon.</translation>
+        <source>A message that was attached to the TOCN:URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Tourium network.</source>
+        <translation>Viesti joka liitettiin TOCN:URI joka talletetaan siirtotapahtuman kanssa viitteeksi sinulle. Huomio: Tätä viestiä ei lähetetä Tourium verkkoon.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -2614,8 +2614,8 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>Voit allekirjoittaa viestit omilla osoitteillasi todistaaksesi että omistat ne. Ole huolellinen että et allekirjoita mitään epämääräistä, phishing-hyökkäjä voi huijata sinua allekirjoittamaan henkilöllisyytesi omasta puolestaan. Allekirjoita vain yksityiskohtaisesti täytetty selvitys johon sitoudut.</translation>
     </message>
     <message>
-        <source>The TOCN address to sign the message with</source>
-        <translation>TOCN osoite jolla viesti allekirjoitetaan</translation>
+        <source>The Tourium address to sign the message with</source>
+        <translation>Tourium osoite jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2646,8 +2646,8 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>Kopioi tämän hetkinen allekirjoitus leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this TOCN address</source>
-        <translation>Allekirjoita viesti todistaaksesi että omistat tämän TOCN osoitteen</translation>
+        <source>Sign the message to prove you own this Tourium address</source>
+        <translation>Allekirjoita viesti todistaaksesi että omistat tämän Tourium osoitteen</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2670,12 +2670,12 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>Syötä allekirjoittava osoite, viesti ja allekirjoitus alla oleviin kenttiin varmistaaksesi allekirjoituksen aitouden. Varmista että kopioit kaikki kentät täsmälleen oikein, myös rivinvaihdot, välilyönnit, tabulaattorit, jne.</translation>
     </message>
     <message>
-        <source>The TOCN address the message was signed with</source>
-        <translation>TOCN osoite jolla viesti on allekirjoitettu</translation>
+        <source>The Tourium address the message was signed with</source>
+        <translation>Tourium osoite jolla viesti on allekirjoitettu</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified TOCN address</source>
-        <translation>Tarkista että viesti on allekirjoitettu määritetyllä TOCN osoitteella</translation>
+        <source>Verify the message to ensure it was signed with the specified Tourium address</source>
+        <translation>Tarkista että viesti on allekirjoitettu määritetyllä Tourium osoitteella</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -3086,7 +3086,7 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
     </message>
     <message>
         <source>Destination address of transaction.</source>
-        <translation>Siirtotapahtuman TOCN kohdeosoite</translation>
+        <translation>Siirtotapahtuman Tourium kohdeosoite</translation>
     </message>
     <message>
         <source>Amount removed from or added to balance.</source>
@@ -3278,11 +3278,11 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>Lähetä XBZeja</translation>
+        <translation>Lähetä Touriumeja</translation>
     </message>
     <message>
-        <source>InstantX doesn't support sending values that high yet. Transactions are currently limited to %1 DNET.</source>
-        <translation>InstantX ei tue näin korkeaa lähetysmäärää vielä. Siirtotapahtumat on tällä hetkellä rajoitettu %1 DNET.</translation>
+        <source>InstantX doesn't support sending values that high yet. Transactions are currently limited to %1 TOCN.</source>
+        <translation>InstantX ei tue näin korkeaa lähetysmäärää vielä. Siirtotapahtumat on tällä hetkellä rajoitettu %1 TOCN.</translation>
     </message>
 </context>
 <context>
@@ -3325,7 +3325,7 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
     </message>
 </context>
 <context>
-    <name>capracoin-core</name>
+    <name>tourium-core</name>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
         <translation>Kytkeydy annettuun osoitteeseen ja pidä linja aina auki. Käytä [host]:port merkintätapaa IPv6:lle.</translation>
@@ -3395,8 +3395,8 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>Ei tarpeeksi Obfuscate anonymisoituja varoja tälle siirtotapahtumalle.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscate non-denominated funds for this transaction that are not equal 1000 DNET.</source>
-        <translation>Ei tarpeeksi Obfuscate ei-anonymisoituja varoja tälle siirtotapahtumalle, joka ei ole 1000 DNET.</translation>
+        <source>Unable to locate enough Obfuscate non-denominated funds for this transaction that are not equal 1000 TOCN.</source>
+        <translation>Ei tarpeeksi Obfuscate ei-anonymisoituja varoja tälle siirtotapahtumalle, joka ei ole 1000 TOCN.</translation>
     </message>
     <message>
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
@@ -3404,7 +3404,7 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
-        <translation>Varoitus: TOCN verkossa on ristiriitoja! Louhijat näyttävät kokevan virhetilanteita.</translation>
+        <translation>Varoitus: Tourium verkossa on ristiriitoja! Louhijat näyttävät kokevan virhetilanteita.</translation>
     </message>
     <message>
         <source>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</source>
@@ -3619,8 +3619,8 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>Poista kaikki lompakon siirtotapahtumat ja palauta vain nuo osat lohkoketjusta -rescan valinnan avulla käynnistyksessä</translation>
     </message>
     <message>
-        <source>Disable all TOCN specific functionality (Masternodes, Obfuscate, InstantX, Budgeting) (0-1, default: %u)</source>
-        <translation>Kytke pois käytöstä kaikki TOCN:in erityistoiminnot (Masternodet, Obfuscate, InstantX, Budjetointi) (0-1, oletus: %u)</translation>
+        <source>Disable all Tourium specific functionality (Masternodes, Obfuscate, InstantX, Budgeting) (0-1, default: %u)</source>
+        <translation>Kytke pois käytöstä kaikki Tourium:in erityistoiminnot (Masternodet, Obfuscate, InstantX, Budjetointi) (0-1, oletus: %u)</translation>
     </message>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
@@ -3639,12 +3639,12 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
         <translation>Virhe: Ei tuettu argumentti -socks. SOCKS version asettaminen ei ole enää mahdollista, vain SOCKS5 proxyt ovat tuettuja.</translation>
     </message>
     <message>
-        <source>Fees (in DNET/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Siirtomaksut (DNET/Kb) jotka ovat pienempiä kuin tämä, tulkitaan nollamaksuksi välityksessä (oletus: %s)</translation>
+        <source>Fees (in TOCN/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Siirtomaksut (TOCN/Kb) jotka ovat pienempiä kuin tämä, tulkitaan nollamaksuksi välityksessä (oletus: %s)</translation>
     </message>
     <message>
-        <source>Fees (in DNET/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Siirtomaksut (DNET/Kb) jotka ovat pienempiä kuin tämä, tulkitaan nollamaksuksi siirtotapahtuman luonnissa (oletus: %s)</translation>
+        <source>Fees (in TOCN/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Siirtomaksut (TOCN/Kb) jotka ovat pienempiä kuin tämä, tulkitaan nollamaksuksi siirtotapahtuman luonnissa (oletus: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -3717,32 +3717,32 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
 Käännös päivitetty: 1.9.2015 by AjM.</translation>
     </message>
     <message>
-        <source>To use capracoind, or the -server option to capracoin-qt, you must set an rpcpassword in the configuration file:
+        <source>To use touriumd, or the -server option to tourium-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=capracoinrpc
+rpcuser=touriumrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s "TOCN Alert" admin@foo.com
+for example: alertnotify=echo %%s | mail -s "Tourium Alert" admin@foo.com
 </source>
-        <translation>Käyttääksesi capracoind:ia tai -server valintaa capracoin-qt:lle, sinun tulee asettaa rpc salasana asetustiedostossa:
+        <translation>Käyttääksesi touriumd:ia tai -server valintaa tourium-qt:lle, sinun tulee asettaa rpc salasana asetustiedostossa:
 %s
 Suositellaan että käytät allaolevaa satunnaista salasanaa:
-rpcuser=capracoinrpc
+rpcuser=touriumrpc
 rpcpassword=%s
 (sinun ei tarvitse muistaa tätä salasanaa)
 Käyttäjätunnus ja salasana on oltava ERILAISET.
 Jos tiedostoa ei ole, luo se vain omistajan-luku-oikeudella.
 Suositellaan asetettavaksi alertnotify jotta saat tietoa ongelmista,
-esimerkiksi: alertnotify=echo %%s | mail -s "TOCN Hälytys" admin@foo.com
+esimerkiksi: alertnotify=echo %%s | mail -s "Tourium Hälytys" admin@foo.com
 </translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 1000 DNET.</source>
-        <translation>Ei tarpeeksi varoja tälle siirtotapahtumalle, joka ei ole 1000 DNET.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 1000 TOCN.</source>
+        <translation>Ei tarpeeksi varoja tälle siirtotapahtumalle, joka ei ole 1000 TOCN.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -3754,7 +3754,7 @@ esimerkiksi: alertnotify=echo %%s | mail -s "TOCN Hälytys" admin@foo.com
     </message>
     <message>
         <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Tourium Core will not work properly.</source>
-        <translation>Varoitus: Tarkista että tietokoneesi kellonaika ja päivämäärä ovat oikein! TOCN ei toimi oikein väärällä päivämäärällä ja/tai kellonajalla.</translation>
+        <translation>Varoitus: Tarkista että tietokoneesi kellonaika ja päivämäärä ovat oikein! Tourium ei toimi oikein väärällä päivämäärällä ja/tai kellonajalla.</translation>
     </message>
     <message>
         <source>Whitelist peers connecting from the given netmask or IP address. Can be specified multiple times.</source>
@@ -3765,8 +3765,8 @@ esimerkiksi: alertnotify=echo %%s | mail -s "TOCN Hälytys" admin@foo.com
         <translation>Luotettaviksi merkittyjä peers:ejä ei voida DoS estää, ja niiden siirtotapahtumat välitetään aina, vaikka ne olisvatkin jo muistivarannossa, käyttökelpoinen esim. yhdyskäytävään</translation>
     </message>
     <message>
-        <source>(25791 could be used only on mainnet)</source>
-        <translation>(25791 voidaan käyttää vain pääverkossa)</translation>
+        <source>(15110 could be used only on mainnet)</source>
+        <translation>(15110 voidaan käyttää vain pääverkossa)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -3807,8 +3807,12 @@ esimerkiksi: alertnotify=echo %%s | mail -s "TOCN Hälytys" admin@foo.com
         <translation>Copyright (C) 2009-%i Bitcoin Core Kehittäjät</translation>
     </message>
     <message>
-        <source>Copyright (C) 2014-%i The Tourium Core Developers</source>
-        <translation>Copyright (C) 2014-%i Tourium Core Kehittäjät</translation>
+        <source>Copyright (C) 2015-%i The ALQO Core Developers</source>
+        <translation>Copyright (C) 2015-%i ALQO Core Kehittäjät</translation>
+    </message>
+    <message>
+        <source>Copyright (C) 2017-%i The Tourium Core Developers</source>
+        <translation>Copyright (C) 2017-%i Tourium Core Kehittäjät</translation>
     </message>
     <message>
         <source>Could not parse -rpcbind value %s as network address</source>
@@ -3855,8 +3859,8 @@ esimerkiksi: alertnotify=echo %%s | mail -s "TOCN Hälytys" admin@foo.com
         <translation>Virhe: Ei tuettu argumentti -tor löytyi, käytä -onion.</translation>
     </message>
     <message>
-        <source>Fee (in DNET/kB) to add to transactions you send (default: %s)</source>
-        <translation>Lisättävä siirtomaksu (DNET/Kb) siirtotapahtumaan jonka lähetät (oletus: %s)</translation>
+        <source>Fee (in TOCN/kB) to add to transactions you send (default: %s)</source>
+        <translation>Lisättävä siirtomaksu (TOCN/Kb) siirtotapahtumaan jonka lähetät (oletus: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -4183,8 +4187,8 @@ esimerkiksi: alertnotify=echo %%s | mail -s "TOCN Hälytys" admin@foo.com
         <translation>Virheellinen masternoden yksityisavain (masternodeprivkey). Katso lisätietoja dokumentaatiosta.</translation>
     </message>
     <message>
-        <source>(must be25791 for mainnet)</source>
-        <translation>(oltava25791 pääverkossa)</translation>
+        <source>(must be 15110 for mainnet)</source>
+        <translation>(oltava 15110 pääverkossa)</translation>
     </message>
     <message>
         <source>Can't find random Masternode.</source>
@@ -4223,8 +4227,8 @@ esimerkiksi: alertnotify=echo %%s | mail -s "TOCN Hälytys" admin@foo.com
         <translation>KeePassHttp avain AES salattuun viestintään</translation>
     </message>
     <message>
-        <source>Keep N DNET anonymized (default: %u)</source>
-        <translation>Pidä N DNET anonymisoituna (oletus: %u)</translation>
+        <source>Keep N TOCN anonymized (default: %u)</source>
+        <translation>Pidä N TOCN anonymisoituna (oletus: %u)</translation>
     </message>
     <message>
         <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>

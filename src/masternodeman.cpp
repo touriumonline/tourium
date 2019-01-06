@@ -1,6 +1,7 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers 
-// Copyright (c) 2018 The Tourium developers
+// Copyright (c) 2015-2017 The ALQO developers
+// Copyright (c) 2017-2018 The Tourium developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -8,7 +9,6 @@
 #include "activemasternode.h"
 #include "addrman.h"
 #include "masternode.h"
-#include "main.h"
 #include "Darksend.h"
 #include "spork.h"
 #include "util.h"
@@ -452,12 +452,10 @@ CMasternode* CMasternodeMan::Find(const CPubKey& pubKeyMasternode)
 //
 CMasternode* CMasternodeMan::GetNextMasternodeInQueueForPayment(int nBlockHeight, bool fFilterSigTime, int& nCount)
 {
+    LOCK(cs);
 
     CMasternode* pBestMasternode = NULL;
     std::vector<pair<int64_t, CTxIn> > vecMasternodeLastPaid;
-
-    // Need LOCK2 here to ensure consistent locking order because the GetBlockHash call below locks cs_main
-    LOCK2(cs_main,cs);
 
     /*
         Make a vector with all of the last paid times
@@ -574,8 +572,6 @@ int CMasternodeMan::GetMasternodeRank(const CTxIn& vin, int64_t nBlockHeight, in
     std::vector<pair<int64_t, CTxIn> > vecMasternodeScores;
     int64_t nMasternode_Min_Age = GetSporkValue(SPORK_16_MN_WINNER_MINIMUM_AGE);
     int64_t nMasternode_Age = 0;
- 
- 
 
     //make sure we know about this block
     uint256 hash = 0;
@@ -902,11 +898,10 @@ void CMasternodeMan::ProcessMessage(CNode* pfrom, std::string& strCommand, CData
             return;
         }
 
-        /*
         if (Params().NetworkID() == CBaseChainParams::MAIN) {
             if (addr.GetPort() != 15110) return;
         } else if (addr.GetPort() == 15110)
-            return;*/
+            return;
 
         //search existing Masternode list, this is where we update existing Masternodes with new dsee broadcasts
         CMasternode* pmn = this->Find(vin);
@@ -1013,11 +1008,7 @@ void CMasternodeMan::ProcessMessage(CNode* pfrom, std::string& strCommand, CData
             mn.protocolVersion = protocolVersion;
             // fake ping
             mn.lastPing = CMasternodePing(vin);
-            int64_t mnCollateral = 0;
             mn.Check(true);
-            mnCollateral = tx2.vout[vin.prevout.n].nValue;
-            mn.collateral = mnCollateral;
-
             // add v11 masternodes, v12 should be added by mnb only
             if (protocolVersion < GETHEADERS_VERSION) {
                 LogPrint("masternode", "dsee - Accepted OLD Masternode entry %i %i\n", count, current);

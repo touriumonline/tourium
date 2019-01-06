@@ -43,11 +43,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Elija la dirección a la cual enviar los capracoin</translation>
+        <translation>Elija la dirección a la cual enviar los Tourium</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Elija la dirección donde recibirá los capracoin</translation>
+        <translation>Elija la dirección donde recibirá los Tourium</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -62,12 +62,12 @@
         <translation>Direcciones de recepción</translation>
     </message>
     <message>
-        <source>These are your TOCN addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Estas son sus direcciones TOCN para enviar pagos. Compruebe siempre la cantidad y la dirección receptora antes de enviar capracoins.</translation>
+        <source>These are your Tourium addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Estas son sus direcciones Tourium para enviar pagos. Compruebe siempre la cantidad y la dirección receptora antes de enviar Touriums.</translation>
     </message>
     <message>
-        <source>These are your TOCN addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Estas son sus direcciones de TOCN para recibir pagos. Se recomienda utilizar una nueva dirección de recepción para cada transacción.</translation>
+        <source>These are your Tourium addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Estas son sus direcciones de Tourium para recibir pagos. Se recomienda utilizar una nueva dirección de recepción para cada transacción.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,8 +176,8 @@
         <translation>Confirmar cifrado del monedero</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR DNET&lt;/b&gt;!</source>
-        <translation>Advertencia: Si cifra la cartera y pierde su contraseña, ¡&lt;b&gt;PERDERÁ TODOS SUS DNET&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TOCN&lt;/b&gt;!</source>
+        <translation>Advertencia: Si cifra la cartera y pierde su contraseña, ¡&lt;b&gt;PERDERÁ TODOS SUS TOCN&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -188,8 +188,8 @@
         <translation>Monedero cifrado</translation>
     </message>
     <message>
-        <source>TOCN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your capracoins from being stolen by malware infecting your computer.</source>
-        <translation>TOCN se cerrará ahora para finalizar el proceso de cifrado. Recuerde que el cifrado de su monedero no puede proteger totalmente sus capracoins del robo por un malware que infecte su sistema.</translation>
+        <source>Tourium will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Touriums from being stolen by malware infecting your computer.</source>
+        <translation>Tourium se cerrará ahora para finalizar el proceso de cifrado. Recuerde que el cifrado de su monedero no puede proteger totalmente sus Touriums del robo por un malware que infecte su sistema.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -255,16 +255,16 @@
         <translation>&amp;Enviar</translation>
     </message>
     <message>
-        <source>Send coins to a TOCN address</source>
-        <translation>Enviar cuantía a una dirección TOCN</translation>
+        <source>Send coins to a Tourium address</source>
+        <translation>Enviar cuantía a una dirección Tourium</translation>
     </message>
     <message>
         <source>&amp;Receive</source>
         <translation>&amp;Recibir</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and capracoin: URIs)</source>
-        <translation>Solicitar pagos (genera códigos QR y URIs de TOCN)</translation>
+        <source>Request payments (generates QR codes and TOCN:URIs)</source>
+        <translation>Solicitar pagos (genera códigos QR y URIs de TOCN:)</translation>
     </message>
     <message>
         <source>&amp;Transactions</source>
@@ -303,8 +303,8 @@
         <translation>&amp;Opciones...</translation>
     </message>
     <message>
-        <source>Modify configuration options for TOCN</source>
-        <translation>Modificar las opciones de configuración de TOCN</translation>
+        <source>Modify configuration options for Tourium</source>
+        <translation>Modificar las opciones de configuración de Tourium</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -355,16 +355,16 @@
         <translation>Firmar &amp;mensaje...</translation>
     </message>
     <message>
-        <source>Sign messages with your TOCN addresses to prove you own them</source>
-        <translation>Firmar mensajes con sus direcciones TOCN para demostrar su posesión</translation>
+        <source>Sign messages with your Tourium addresses to prove you own them</source>
+        <translation>Firmar mensajes con sus direcciones Tourium para demostrar su posesión</translation>
     </message>
     <message>
         <source>&amp;Verify message...</source>
         <translation>&amp;Verificar el mensaje...</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified TOCN addresses</source>
-        <translation>Verificar mensajes para comprobar que fueron firmados con la dirección TOCN indicada</translation>
+        <source>Verify messages to ensure they were signed with specified Tourium addresses</source>
+        <translation>Verificar mensajes para comprobar que fueron firmados con la dirección Tourium indicada</translation>
     </message>
     <message>
         <source>&amp;Information</source>
@@ -443,8 +443,8 @@
         <translation>Abrir &amp;URI...</translation>
     </message>
     <message>
-        <source>Open a capracoin: URI or payment request</source>
-        <translation>Abrir un capracoin: URI o petición de pago</translation>
+        <source>Open a TOCN:URI or payment request</source>
+        <translation>Abrir un TOCN:URI o petición de pago</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -463,7 +463,7 @@
         <translation>Sincronizando datos adicionales: %p%</translation>
     </message>
     <message>
-        <source>Show the Tourium Core help message to get a list with possible TOCN command-line options</source>
+        <source>Show the Tourium Core help message to get a list with possible Tourium command-line options</source>
         <translation>Mostrar el mensaje de ayuda de Tourium Core para obtener una lista con las posibles opciones de la consola de comandos</translation>
     </message>
     <message>
@@ -487,8 +487,8 @@
         <translation>Barra de pestañas</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to TOCN network</source>
-        <translation><numerusform>%n conexion(es) activa a la red TOCN</numerusform><numerusform>%n conexion(es) activas a la red TOCN</numerusform></translation>
+        <source>%n active connection(s) to Tourium network</source>
+        <translation><numerusform>%n conexion(es) activa a la red Tourium</numerusform><numerusform>%n conexion(es) activas a la red Tourium</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -626,7 +626,7 @@ Dirección: %4
     </message>
     <message>
         <source>Coin Selection</source>
-        <translation>Selección de TOCN</translation>
+        <translation>Selección de Tourium</translation>
     </message>
     <message>
         <source>Dust:</source>
@@ -864,28 +864,28 @@ Dirección: %4
         <translation>Por favor, seleccione el nivel de privacidad.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 1000 DNET</source>
-        <translation>Usar 2 nodos maestros distintos para mezclar fondos hasta 1000 DNET</translation>
+        <source>Use 2 separate masternodes to mix funds up to 1000 TOCN</source>
+        <translation>Usar 2 nodos maestros distintos para mezclar fondos hasta 1000 TOCN</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 1000 DNET</source>
-        <translation>Usar 8 nodos maestros diferentes para mezclar fondos hasta 1000 DNET</translation>
+        <source>Use 8 separate masternodes to mix funds up to 1000 TOCN</source>
+        <translation>Usar 8 nodos maestros diferentes para mezclar fondos hasta 1000 TOCN</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Usar 16 nodos maestros diferentes</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 DNET to anonymize 1000 DNET</source>
-        <translation>Esta es la opción más rápida y anonimizar 1000 DNET costará alrededor de 0.025 DNET</translation>
+        <source>This option is the quickest and will cost about ~0.025 TOCN to anonymize 1000 TOCN</source>
+        <translation>Esta es la opción más rápida y anonimizar 1000 TOCN costará alrededor de 0.025 TOCN</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 DNET to anonymize 1000 DNET</source>
-        <translation>Esta opción es moderadamente rápida y anonimizar 1000 DNET costará alrededor de 0.05 DNET</translation>
+        <source>This option is moderately fast and will cost about 0.05 TOCN to anonymize 1000 TOCN</source>
+        <translation>Esta opción es moderadamente rápida y anonimizar 1000 TOCN costará alrededor de 0.05 TOCN</translation>
     </message>
     <message>
-        <source>0.1 DNET per 1000 DNET you anonymize.</source>
-        <translation>0.1 DNET por cada 1000 DNET que anonimice.</translation>
+        <source>0.1 TOCN per 1000 TOCN you anonymize.</source>
+        <translation>0.1 TOCN por cada 1000 TOCN que anonimice.</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
@@ -896,16 +896,16 @@ Dirección: %4
         <translation>Configuración de Obfuscate</translation>
     </message>
     <message>
-        <source>Obfuscate was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening TOCN's configuration screen.</source>
-        <translation>Obfuscate fue configurado con éxito en la básica (%1 y 2 rondas). Puede cambiarlo en cualquier momento abriendo la pantalla de configuración de TOCN.</translation>
+        <source>Obfuscate was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Tourium's configuration screen.</source>
+        <translation>Obfuscate fue configurado con éxito en la básica (%1 y 2 rondas). Puede cambiarlo en cualquier momento abriendo la pantalla de configuración de Tourium.</translation>
     </message>
     <message>
-        <source>Obfuscate was successfully set to high (%1 and 8 rounds). You can change this at any time by opening TOCN's configuration screen.</source>
-        <translation>Obfuscate fue configurado con éxito en la alta (%1 y 8 rondas). Puede cambiarlo en cualquier momento abriendo la pantalla de configuración de TOCN.</translation>
+        <source>Obfuscate was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Tourium's configuration screen.</source>
+        <translation>Obfuscate fue configurado con éxito en la alta (%1 y 8 rondas). Puede cambiarlo en cualquier momento abriendo la pantalla de configuración de Tourium.</translation>
     </message>
     <message>
-        <source>Obfuscate was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening TOCN's configuration screen.</source>
-        <translation>Obfuscate fue configurado con éxito en la máxima (%1 y 16 rondas). Puede cambiarlo en cualquier momento abriendo la pantalla de configuración de TOCN.</translation>
+        <source>Obfuscate was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Tourium's configuration screen.</source>
+        <translation>Obfuscate fue configurado con éxito en la máxima (%1 y 16 rondas). Puede cambiarlo en cualquier momento abriendo la pantalla de configuración de Tourium.</translation>
     </message>
 </context>
 <context>
@@ -947,8 +947,8 @@ Dirección: %4
         <translation>Editar dirección de envío</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid TOCN address.</source>
-        <translation>La dirección introducida "%1" no es una dirección TOCN válida.</translation>
+        <source>The entered address "%1" is not a valid Tourium address.</source>
+        <translation>La dirección introducida "%1" no es una dirección Tourium válida.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1056,8 +1056,8 @@ Dirección: %4
         <translation>Al ser la primera vez que se ejecuta el programa, puede elegir dónde almacenará sus datos Tourium Core.</translation>
     </message>
     <message>
-        <source>Tourium Core will download and store a copy of the TOCN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Tourium Core va a descargar y guardar una copia de la cadena de bloques de TOCN. Se almacenará al menos %1GB de datos en este directorio, que irá creciendo con el tiempo. El monedero se guardará también en este directorio.</translation>
+        <source>Tourium Core will download and store a copy of the Tourium block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Tourium Core va a descargar y guardar una copia de la cadena de bloques de Tourium. Se almacenará al menos %1GB de datos en este directorio, que irá creciendo con el tiempo. El monedero se guardará también en este directorio.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1122,12 +1122,12 @@ Dirección: %4
         <translation>&amp;Principal</translation>
     </message>
     <message>
-        <source>Automatically start TOCN after logging in to the system.</source>
-        <translation>Iniciar TOCN automáticamente al ingresar en el sistema.</translation>
+        <source>Automatically start Tourium after logging in to the system.</source>
+        <translation>Iniciar Tourium automáticamente al ingresar en el sistema.</translation>
     </message>
     <message>
-        <source>&amp;Start TOCN on system login</source>
-        <translation>&amp;Iniciar TOCN al ingresar en el sistema</translation>
+        <source>&amp;Start Tourium on system login</source>
+        <translation>&amp;Iniciar Tourium al ingresar en el sistema</translation>
     </message>
     <message>
         <source>Size of &amp;database cache</source>
@@ -1154,8 +1154,8 @@ Dirección: %4
         <translation>Esta cuantía sirve de umbral para que Obfuscate se apague, una vez sea alcanzada.</translation>
     </message>
     <message>
-        <source>Amount of TOCN to keep anonymized</source>
-        <translation>Cuantía de TOCN a mantener anónima</translation>
+        <source>Amount of Tourium to keep anonymized</source>
+        <translation>Cuantía de Tourium a mantener anónima</translation>
     </message>
     <message>
         <source>W&amp;allet</source>
@@ -1174,8 +1174,8 @@ Dirección: %4
         <translation>Permitir conexiones entrantes</translation>
     </message>
     <message>
-        <source>Connect to the TOCN network through a SOCKS5 proxy.</source>
-        <translation>Conectarse a la red TOCN a través de un proxy SOCKS5.</translation>
+        <source>Connect to the Tourium network through a SOCKS5 proxy.</source>
+        <translation>Conectarse a la red Tourium a través de un proxy SOCKS5.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1206,8 +1206,8 @@ Dirección: %4
         <translation>&amp;Red</translation>
     </message>
     <message>
-        <source>Automatically open the TOCN client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abrir automáticamente el puerto del cliente TOCN en el router. Esta opción solo funciona si el router admite UPnP y está activado.</translation>
+        <source>Automatically open the Tourium client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abrir automáticamente el puerto del cliente Tourium en el router. Esta opción solo funciona si el router admite UPnP y está activado.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1258,14 +1258,14 @@ Dirección: %4
         <translation>I&amp;dioma de la interfaz de usuario</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting TOCN.</source>
-        <translation>El idioma de la interfaz de usuario puede establecerse aquí. Este ajuste se aplicará después de reiniciar TOCN.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Tourium.</source>
+        <translation>El idioma de la interfaz de usuario puede establecerse aquí. Este ajuste se aplicará después de reiniciar Tourium.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</source>
+https://www.transifex.com/touriumcoin/tourium-wallet-translations/</source>
         <translation>¿Idioma no disponible o traducción incompleta? Contribuye a la traducción aquí:
-https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</translation>
+https://www.transifex.com/touriumcoin/tourium-wallet-translations/</translation>
     </message>
     <message>
         <source>User Interface Theme:</source>
@@ -1277,7 +1277,7 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Elegir la subdivisión predeterminada para mostrar las cuantías en la interfaz y cuando se envían capracoins.</translation>
+        <translation>Elegir la subdivisión predeterminada para mostrar las cuantías en la interfaz y cuando se envían Touriums.</translation>
     </message>
     <message>
         <source>Decimal digits</source>
@@ -1347,8 +1347,8 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
         <translation>Formulario</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the TOCN network after a connection is established, but this process has not completed yet.</source>
-        <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red TOCN después de que se haya establecido una conexión, pero este proceso aún no se ha completado.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Tourium network after a connection is established, but this process has not completed yet.</source>
+        <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red Tourium después de que se haya establecido una conexión, pero este proceso aún no se ha completado.</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1431,8 +1431,8 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
         <translation>Cuantía y Rondas:</translation>
     </message>
     <message>
-        <source>0 DNET / 0 Rounds</source>
-        <translation>0 DNET / 0 Rondas</translation>
+        <source>0 TOCN / 0 Rounds</source>
+        <translation>0 TOCN / 0 Rondas</translation>
     </message>
     <message>
         <source>Submitted Denom:</source>
@@ -1568,8 +1568,8 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
         <translation>Error en solicitud de pago</translation>
     </message>
     <message>
-        <source>Cannot start capracoin: click-to-pay handler</source>
-        <translation>No se pudo iniciar capracoin: manejador de pago-al-clic</translation>
+        <source>Cannot start TOCN: click-to-pay handler</source>
+        <translation>No se pudo iniciar TOCN: manejador de pago-al-clic</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1588,8 +1588,8 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
         <translation>Dirección de pago no válida %1</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid TOCN address or malformed URI parameters.</source>
-        <translation>¡No se puede interpretar la URI! Esto puede deberse a una dirección TOCN inválida o a parámetros de URI mal formados.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Tourium address or malformed URI parameters.</source>
+        <translation>¡No se puede interpretar la URI! Esto puede deberse a una dirección Tourium inválida o a parámetros de URI mal formados.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -1674,8 +1674,8 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
         <translation>Cuantía</translation>
     </message>
     <message>
-        <source>Enter a TOCN address (e.g. %1)</source>
-        <translation>Introduzca una dirección TOCN (e.g. %1)</translation>
+        <source>Enter a Tourium address (e.g. %1)</source>
+        <translation>Introduzca una dirección Tourium (e.g. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1764,7 +1764,7 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
         <translation>Número de conexiones</translation>
     </message>
     <message>
-        <source>Open the TOCN debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the Tourium debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>Abrir el archivo de registro de depuración en el directorio actual de datos. Esto puede requerir varios segundos para archivos de registro grandes.</translation>
     </message>
     <message>
@@ -1972,8 +1972,8 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
         <translation>Salientes:</translation>
     </message>
     <message>
-        <source>Welcome to the TOCN RPC console.</source>
-        <translation>Bienvenido a la consola RPC de TOCN</translation>
+        <source>Welcome to the Tourium RPC console.</source>
+        <translation>Bienvenido a la consola RPC de Tourium</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -2035,8 +2035,8 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
         <translation>&amp;Reutilizar una dirección receptora existente (no recomendado)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the TOCN network.</source>
-        <translation>Un mensaje opcional para adjuntar a la solicitud de pago, el cual se muestra cuando se abre la solicitud. Nota: El mensaje no se enviará con el pago por la red TOCN.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Tourium network.</source>
+        <translation>Un mensaje opcional para adjuntar a la solicitud de pago, el cual se muestra cuando se abre la solicitud. Nota: El mensaje no se enviará con el pago por la red Tourium.</translation>
     </message>
     <message>
         <source>&amp;Message:</source>
@@ -2047,8 +2047,8 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
         <translation>Etiqueta opcional para asociar con la nueva dirección de recepción.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the TOCN network.</source>
-        <translation>Un mensaje opcional para adjuntar con la solicitud de pago, el cual aparecerá cuando ésta sea abierta.&lt;br&gt;Nota: El mensaje no se enviará con el pago a la red TOCN.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Tourium network.</source>
+        <translation>Un mensaje opcional para adjuntar con la solicitud de pago, el cual aparecerá cuando ésta sea abierta.&lt;br&gt;Nota: El mensaje no se enviará con el pago a la red Tourium.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -2201,7 +2201,7 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>Enviar TOCN</translation>
+        <translation>Enviar Tourium</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -2292,8 +2292,8 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
         <translation>Si la comisión personalizada se establece en 1000 duffs y la transacción sólo ocupa 250 bytes, entonces "por kilobyte" sólo se pagan 250 duffs de comisión,&lt;br /&gt;mientras que "total como mínimo" paga 1000 duffs. Para transacciones mayores de un kilobyte ambas pagan por kilobyte.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for capracoin transactions than the network can process.</source>
-        <translation>Pagar sólo la comisión mínima está bien mientras el volumen de transacciones sea menor al espacio en los bloques.&lt;br /&gt;No obstante, tenga en cuenta que esto puede acabar en una transacción que nunca se confirme una vez haya más demanda de transacciones capracoin a la procesable por la red.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Tourium transactions than the network can process.</source>
+        <translation>Pagar sólo la comisión mínima está bien mientras el volumen de transacciones sea menor al espacio en los bloques.&lt;br /&gt;No obstante, tenga en cuenta que esto puede acabar en una transacción que nunca se confirme una vez haya más demanda de transacciones Tourium a la procesable por la red.</translation>
     </message>
     <message>
         <source>per kilobyte</source>
@@ -2445,7 +2445,7 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
     </message>
     <message>
         <source>Confirm send coins</source>
-        <translation>Confirmar el envío de capracoins</translation>
+        <translation>Confirmar el envío de Touriums</translation>
     </message>
     <message>
         <source>A fee %1 times higher than %2 per kB is considered an insanely high fee.</source>
@@ -2485,19 +2485,19 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
     </message>
     <message>
         <source>The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>¡La transacción fue rechazada! Esto puede suceder si alguno de los capracoins de su monedero ya se habían gastado, por ejemplo si usó una copia de wallet.dat y los capracoin se gastaron en dicha copia pero no se aparecen como gastados aqui.</translation>
+        <translation>¡La transacción fue rechazada! Esto puede suceder si alguno de los Touriums de su monedero ya se habían gastado, por ejemplo si usó una copia de wallet.dat y los Tourium se gastaron en dicha copia pero no se aparecen como gastados aqui.</translation>
     </message>
     <message>
         <source>Error: The wallet was unlocked only to anonymize coins.</source>
-        <translation>Error: El monedero se desbloqueó solo para anonimizar capracoins.</translation>
+        <translation>Error: El monedero se desbloqueó solo para anonimizar Touriums.</translation>
     </message>
     <message>
         <source>Pay only the minimum fee of %1</source>
         <translation>Pagar sólo la comisión mínima de %1</translation>
     </message>
     <message>
-        <source>Warning: Invalid TOCN address</source>
-        <translation>Aviso: Dirección de TOCN no válida</translation>
+        <source>Warning: Invalid Tourium address</source>
+        <translation>Aviso: Dirección de Tourium no válida</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2519,8 +2519,8 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
         <translation>Pagar &amp;a:</translation>
     </message>
     <message>
-        <source>The TOCN address to send the payment to</source>
-        <translation>La dirección TOCN a la cual enviar el pago</translation>
+        <source>The Tourium address to send the payment to</source>
+        <translation>La dirección Tourium a la cual enviar el pago</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2559,8 +2559,8 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
         <translation>Mensaje:</translation>
     </message>
     <message>
-        <source>A message that was attached to the capracoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the TOCN network.</source>
-        <translation>Un mensaje que se adjuntó al capracoin: URI que será almacenada con la transacción para su referencia. Nota: Este mensaje no se enviará a través de la red TOCN.</translation>
+        <source>A message that was attached to the TOCN:URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Tourium network.</source>
+        <translation>Un mensaje que se adjuntó al TOCN:URI que será almacenada con la transacción para su referencia. Nota: Este mensaje no se enviará a través de la red Tourium.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -2609,8 +2609,8 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
         <translation>Puede firmar mensajes con sus direcciones para demostrar que las posee. Tenga cuidado de no firmar cualquier cosa vaga, ya que los ataques de phishing pueden tratar de engañarle para suplantar su identidad. Firme solo declaraciones totalmente detalladas con las que usted esté de acuerdo.</translation>
     </message>
     <message>
-        <source>The TOCN address to sign the message with</source>
-        <translation>La dirección TOCN con la cual se firma el mensaje</translation>
+        <source>The Tourium address to sign the message with</source>
+        <translation>La dirección Tourium con la cual se firma el mensaje</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2641,8 +2641,8 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
         <translation>Copiar la firma actual al portapapeles del sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this TOCN address</source>
-        <translation>Firmar el mensaje para demostrar que se posee esta dirección TOCN</translation>
+        <source>Sign the message to prove you own this Tourium address</source>
+        <translation>Firmar el mensaje para demostrar que se posee esta dirección Tourium</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2665,12 +2665,12 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
         <translation>Introduzca la dirección para la firma, el mensaje (asegurándose de copiar tal cual los saltos de línea, espacios, tabulaciones, etc.) y la firma a continuación para verificar el mensaje. Tenga cuidado de no asumir más información de lo que dice el propio mensaje firmado para evitar fraudes basados en ataques de tipo man-in-the-middle.</translation>
     </message>
     <message>
-        <source>The TOCN address the message was signed with</source>
-        <translation>La dirección TOCN con la cual se firmó el mensaje</translation>
+        <source>The Tourium address the message was signed with</source>
+        <translation>La dirección Tourium con la cual se firmó el mensaje</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified TOCN address</source>
-        <translation>Verificar el mensaje para garantizar que fue firmado con la dirección TOCN indicada</translation>
+        <source>Verify the message to ensure it was signed with the specified Tourium address</source>
+        <translation>Verificar el mensaje para garantizar que fue firmado con la dirección Tourium indicada</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2919,7 +2919,7 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
     </message>
     <message>
         <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Los capracoins generados deben madurar %1 bloques antes de que puedan gastarse. Cuando generó este bloque, se transmitió a la red para que se añadiera a la cadena de bloques. Si no consigue entrar en la cadena, su estado cambiará a "no aceptado" y ya no se podrá gastar. Esto puede ocurrir ocasionalmente si otro nodo genera un bloque a pocos segundos del suyo.</translation>
+        <translation>Los Touriums generados deben madurar %1 bloques antes de que puedan gastarse. Cuando generó este bloque, se transmitió a la red para que se añadiera a la cadena de bloques. Si no consigue entrar en la cadena, su estado cambiará a "no aceptado" y ya no se podrá gastar. Esto puede ocurrir ocasionalmente si otro nodo genera un bloque a pocos segundos del suyo.</translation>
     </message>
     <message>
         <source>Debug information</source>
@@ -3273,11 +3273,11 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>Enviar TOCN</translation>
+        <translation>Enviar Tourium</translation>
     </message>
     <message>
-        <source>InstantX doesn't support sending values that high yet. Transactions are currently limited to %1 DNET.</source>
-        <translation>InstantX aún no soporta el envío de valores tan elevados. Las transacciones están limitadas actualmente a %1 DNET.</translation>
+        <source>InstantX doesn't support sending values that high yet. Transactions are currently limited to %1 TOCN.</source>
+        <translation>InstantX aún no soporta el envío de valores tan elevados. Las transacciones están limitadas actualmente a %1 TOCN.</translation>
     </message>
 </context>
 <context>
@@ -3320,7 +3320,7 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
     </message>
 </context>
 <context>
-    <name>capracoin-core</name>
+    <name>tourium-core</name>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
         <translation>Vincular a la dirección dada y escuchar siempre en ella. Utilice la notación [host]:port para IPv6</translation>
@@ -3331,7 +3331,7 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
     </message>
     <message>
         <source>Obfuscate uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
-        <translation>Obfuscate utiliza cuantías denominadas exactas para enviar fondos, simplemente necesita anonimizar algunos capracoins más. </translation>
+        <translation>Obfuscate utiliza cuantías denominadas exactas para enviar fondos, simplemente necesita anonimizar algunos Touriums más. </translation>
     </message>
     <message>
         <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</source>
@@ -3390,8 +3390,8 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
         <translation>No se pueden localizar fondos denominados de Obfuscate suficientes para esta transacción.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscate non-denominated funds for this transaction that are not equal 1000 DNET.</source>
-        <translation>No se pueden localizar fondos no denominados de Obfuscate suficientes para esta transacción que no sean iguales a 1000 DNET.</translation>
+        <source>Unable to locate enough Obfuscate non-denominated funds for this transaction that are not equal 1000 TOCN.</source>
+        <translation>No se pueden localizar fondos no denominados de Obfuscate suficientes para esta transacción que no sean iguales a 1000 TOCN.</translation>
     </message>
     <message>
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
@@ -3615,8 +3615,8 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
         <translation>Borrar todas las transacciones del monedero y recuperar únicamente aquellas partes de la cadena de bloques a través de -rescan en el inicio</translation>
     </message>
     <message>
-        <source>Disable all TOCN specific functionality (Masternodes, Obfuscate, InstantX, Budgeting) (0-1, default: %u)</source>
-        <translation>Desactivar todas las funciones asociadas a TOCN (Nodos Maestros, Obfuscate, InstantX, Presupuesto) (0-1, predeterminado: %u)</translation>
+        <source>Disable all Tourium specific functionality (Masternodes, Obfuscate, InstantX, Budgeting) (0-1, default: %u)</source>
+        <translation>Desactivar todas las funciones asociadas a Tourium (Nodos Maestros, Obfuscate, InstantX, Presupuesto) (0-1, predeterminado: %u)</translation>
     </message>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
@@ -3635,12 +3635,12 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
         <translation>Error: Se encontró el argumento no permitido -socks. Ajustar la versión de SOCKS ya no es posible, sólo se admiten proxies SOCKS5</translation>
     </message>
     <message>
-        <source>Fees (in DNET/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Las comisiones (en DNET/Kb) menores a ésta se consideran como cero a efectos de transmisión (predeterminado: %s)</translation>
+        <source>Fees (in TOCN/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Las comisiones (en TOCN/Kb) menores a ésta se consideran como cero a efectos de transmisión (predeterminado: %s)</translation>
     </message>
     <message>
-        <source>Fees (in DNET/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Las comisiones (en DNET/Kb) menores a ésta se consideran como cero a efectos de creación de transacciones (predeterminado: %s)</translation>
+        <source>Fees (in TOCN/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Las comisiones (en TOCN/Kb) menores a ésta se consideran como cero a efectos de creación de transacciones (predeterminado: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -3688,7 +3688,7 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
     </message>
     <message>
         <source>Provide liquidity to Obfuscate by infrequently mixing coins on a continual basis (0-100, default: %u, 1=very frequent, high fees, 100=very infrequent, low fees)</source>
-        <translation>Ofrecer liquidez a Obfuscate mezclando capracoin con poca frecuencia y de forma continua (0-100, predeterminado: %u, 1=muy frecuente, comisiones altas, 100=muy pocas veces, comisiones bajas)</translation>
+        <translation>Ofrecer liquidez a Obfuscate mezclando Tourium con poca frecuencia y de forma continua (0-100, predeterminado: %u, 1=muy frecuente, comisiones altas, 100=muy pocas veces, comisiones bajas)</translation>
     </message>
     <message>
         <source>Require high priority for relaying free or low-fee transactions (default:%u)</source>
@@ -3700,7 +3700,7 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
     </message>
     <message>
         <source>Set the number of threads for coin generation if enabled (-1 = all cores, default: %d)</source>
-        <translation>Establecer el número de hilos para la generación de capracoin cuando ésta se encuentra activada (-1 = todos los núcleos, predeterminado: %d)</translation>
+        <translation>Establecer el número de hilos para la generación de Tourium cuando ésta se encuentra activada (-1 = todos los núcleos, predeterminado: %d)</translation>
     </message>
     <message>
         <source>Show N confirmations for a successfully locked transaction (0-9999, default: %u)</source>
@@ -3711,32 +3711,32 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
         <translation>Este producto incluye software desarrollado por el Proyecto OpenSSL para su uso en el Toolkit OpenSSL &lt;https://www.openssl.org/&gt; y software criptográfico escrito por Eric Young y software UPnP escrito por Thomas Bernard.</translation>
     </message>
     <message>
-        <source>To use capracoind, or the -server option to capracoin-qt, you must set an rpcpassword in the configuration file:
+        <source>To use touriumd, or the -server option to tourium-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=capracoinrpc
+rpcuser=touriumrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s "TOCN Alert" admin@foo.com
+for example: alertnotify=echo %%s | mail -s "Tourium Alert" admin@foo.com
 </source>
-        <translation>Para usar capracoind, o la opción -server de capracoin-qt, debe establecer rpcpassword en el archivo de configuración:
+        <translation>Para usar touriumd, o la opción -server de tourium-qt, debe establecer rpcpassword en el archivo de configuración:
 %s
 Es recomendable que use la contraseña aleatoria siguiente:
-rpcuser=capracoinrpc
+rpcuser=touriumrpc
 rpcpassword=%s
 (no necesita recordar esta contraseña)
 El nombre de usuario y la contraseña NO DEBEN ser iguales.
 Si el archivo no existe, créelo con permisos de sólo lectura para su propietario.
 También resulta recomendable establecer alertnotify para que se le notifique de posibles problemas;
-por ejemplo: alertnotify=echo %%s | mail -s "Alerta de TOCN" admin@foo.com
+por ejemplo: alertnotify=echo %%s | mail -s "Alerta de Tourium" admin@foo.com
 </translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 1000 DNET.</source>
-        <translation>No se pueden localizar fondos suficientes para esta transacción que no sean iguales a 1000 DNET.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 1000 TOCN.</source>
+        <translation>No se pueden localizar fondos suficientes para esta transacción que no sean iguales a 1000 TOCN.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -3759,8 +3759,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "Alerta de TOCN" admin@foo.com
         <translation>Los pares de la lista blanca no pueden ser excluidos por DoS y sus transacciones siempre se transmitirán, incluso si ya se encuentran en el grupo de memoria, útil e.g. para una pasarela</translation>
     </message>
     <message>
-        <source>(25791 could be used only on mainnet)</source>
-        <translation>(25791 sólo se puede usar en la red principal)</translation>
+        <source>(15110 could be used only on mainnet)</source>
+        <translation>(15110 sólo se puede usar en la red principal)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -3801,8 +3801,12 @@ por ejemplo: alertnotify=echo %%s | mail -s "Alerta de TOCN" admin@foo.com
         <translation>Copyright (C) 2009-%i Los Desarrolladores de Bitcoin Core</translation>
     </message>
     <message>
-        <source>Copyright (C) 2014-%i The Tourium Core Developers</source>
-        <translation>Copyright (C) 2014-%i Los Desarrolladores de Tourium Core</translation>
+        <source>Copyright (C) 2015-%i The ALQO Core Developers</source>
+        <translation>Copyright (C) 2015-%i Los Desarrolladores de ALQO Core</translation>
+    </message>
+    <message>
+        <source>Copyright (C) 2017-%i The Tourium Core Developers</source>
+        <translation>Copyright (C) 2017-%i Los Desarrolladores de Tourium Core</translation>
     </message>
     <message>
         <source>Could not parse -rpcbind value %s as network address</source>
@@ -3849,8 +3853,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "Alerta de TOCN" admin@foo.com
         <translation>Error: Se encontró el argumento no soportado -tor, use -onion.</translation>
     </message>
     <message>
-        <source>Fee (in DNET/kB) to add to transactions you send (default: %s)</source>
-        <translation>Comisión (en DNET/kB) a añadir sobre las transacciones que envíe (predeterminado: %s)</translation>
+        <source>Fee (in TOCN/kB) to add to transactions you send (default: %s)</source>
+        <translation>Comisión (en TOCN/kB) a añadir sobre las transacciones que envíe (predeterminado: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -3870,7 +3874,7 @@ por ejemplo: alertnotify=echo %%s | mail -s "Alerta de TOCN" admin@foo.com
     </message>
     <message>
         <source>Generate coins (default: %u)</source>
-        <translation>Generar capracoin (predeterminado: %u)</translation>
+        <translation>Generar Tourium (predeterminado: %u)</translation>
     </message>
     <message>
         <source>How many blocks to check at startup (default: %u, 0 = all)</source>
@@ -4177,8 +4181,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "Alerta de TOCN" admin@foo.com
         <translation>La clave prinvada del nodo maestro no es válida. Por favor, consulte la  documentación.</translation>
     </message>
     <message>
-        <source>(must be25791 for mainnet)</source>
-        <translation>(debe ser25791 para la red principal)</translation>
+        <source>(must be 15110 for mainnet)</source>
+        <translation>(debe ser 15110 para la red principal)</translation>
     </message>
     <message>
         <source>Can't find random Masternode.</source>
@@ -4217,8 +4221,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "Alerta de TOCN" admin@foo.com
         <translation>Clave KeePassHttp para la comunicación cifrada AES con KeePass</translation>
     </message>
     <message>
-        <source>Keep N DNET anonymized (default: %u)</source>
-        <translation>Conservar N DNET anónimos (predeterminado: %u)</translation>
+        <source>Keep N TOCN anonymized (default: %u)</source>
+        <translation>Conservar N TOCN anónimos (predeterminado: %u)</translation>
     </message>
     <message>
         <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>

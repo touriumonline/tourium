@@ -55,12 +55,11 @@ bool CMasternodeConfig::read(std::string& strErr)
             }
         }
 
-        /*
         if (Params().NetworkID() == CBaseChainParams::MAIN) {
             if (CService(ip).GetPort() != 15110) {
                 strErr = _("Invalid port detected in masternode.conf") + "\n" +
                          strprintf(_("Line: %d"), linenumber) + "\n\"" + line + "\"" + "\n" +
-                         _("(can be 15110 for mainnet)");
+                         _("(must be 15110 for mainnet)");
                 streamConfig.close();
                 return false;
             }
@@ -70,7 +69,7 @@ bool CMasternodeConfig::read(std::string& strErr)
                      _("(15110 could be used only on mainnet)");
             streamConfig.close();
             return false;
-        }*/
+        }
 
 
         add(alias, ip, privKey, txHash, outputIndex);

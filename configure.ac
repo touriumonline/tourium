@@ -1,7 +1,7 @@
 dnl require autoconf 2.60 (AS_ECHO/AS_ECHO_N)
 AC_PREREQ([2.60])
 define(_CLIENT_VERSION_MAJOR, 1)
-define(_CLIENT_VERSION_MINOR, 0)
+define(_CLIENT_VERSION_MINOR, 1)
 define(_CLIENT_VERSION_REVISION, 0)
 define(_CLIENT_VERSION_BUILD, 0)
 define(_CLIENT_VERSION_IS_RELEASE, true)
@@ -14,9 +14,9 @@ AC_CONFIG_MACRO_DIR([build-aux/m4])
 
 AC_CANONICAL_HOST
 
-AH_TOP([#ifndef XBZ_CONFIG_H])
-AH_TOP([#define XBZ_CONFIG_H])
-AH_BOTTOM([#endif //XBZ_CONFIG_H])
+AH_TOP([#ifndef TOCN_CONFIG_H])
+AH_TOP([#define TOCN_CONFIG_H])
+AH_BOTTOM([#endif //TOCN_CONFIG_H])
 
 dnl faketime breaks configure and is only needed for make. Disable it here.
 unset FAKETIME

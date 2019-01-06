@@ -1,7 +1,8 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers 
-// Copyright (c) 2018 The Tourium developers
+// Copyright (c) 2015-2017 The ALQO developers
+// Copyright (c) 2017-2018 The Tourium developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -21,8 +22,8 @@ QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
     unitlist.append(TOCN);
-    unitlist.append(mXBZ);
-    unitlist.append(uXBZ);
+    unitlist.append(mTOCN);
+    unitlist.append(uTOCN);
     return unitlist;
 }
 
@@ -30,8 +31,8 @@ bool BitcoinUnits::valid(int unit)
 {
     switch (unit) {
     case TOCN:
-    case mXBZ:
-    case uXBZ:
+    case mTOCN:
+    case uTOCN:
         return true;
     default:
         return false;
@@ -42,11 +43,11 @@ QString BitcoinUnits::id(int unit)
 {
     switch (unit) {
     case TOCN:
-        return QString("tourium");
-    case mXBZ:
-        return QString("mtourium");
-    case uXBZ:
-        return QString::fromUtf8("utourium");
+        return QString("TOCN");
+    case mTOCN:
+        return QString("mTOCN");
+    case uTOCN:
+        return QString::fromUtf8("uTOCN");
     default:
         return QString("???");
     }
@@ -58,21 +59,21 @@ QString BitcoinUnits::name(int unit)
         switch (unit) {
         case TOCN:
             return QString("TOCN");
-        case mXBZ:
-            return QString("mXBZ");
-        case uXBZ:
-            return QString::fromUtf8("μXBZ");
+        case mTOCN:
+            return QString("mTOCN");
+        case uTOCN:
+            return QString::fromUtf8("μTOCN");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
         case TOCN:
-            return QString("tXBZ");
-        case mXBZ:
-            return QString("mtXBZ");
-        case uXBZ:
-            return QString::fromUtf8("μtXBZ");
+            return QString("tTOCN");
+        case mTOCN:
+            return QString("mtTOCN");
+        case uTOCN:
+            return QString::fromUtf8("μtTOCN");
         default:
             return QString("???");
         }
@@ -85,9 +86,9 @@ QString BitcoinUnits::description(int unit)
         switch (unit) {
         case TOCN:
             return QString("TOCN");
-        case mXBZ:
+        case mTOCN:
             return QString("Milli-TOCN (1 / 1" THIN_SP_UTF8 "000)");
-        case uXBZ:
+        case uTOCN:
             return QString("Micro-TOCN (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
@@ -95,11 +96,11 @@ QString BitcoinUnits::description(int unit)
     } else {
         switch (unit) {
         case TOCN:
-            return QString("TestXBZs");
-        case mXBZ:
-            return QString("Milli-TestXBZ (1 / 1" THIN_SP_UTF8 "000)");
-        case uXBZ:
-            return QString("Micro-TestXBZ (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            return QString("TestTOCNs");
+        case mTOCN:
+            return QString("Milli-TestTOCN (1 / 1" THIN_SP_UTF8 "000)");
+        case uTOCN:
+            return QString("Micro-TestTOCN (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
@@ -111,9 +112,9 @@ qint64 BitcoinUnits::factor(int unit)
     switch (unit) {
     case TOCN:
         return 100000000;
-    case mXBZ:
+    case mTOCN:
         return 100000;
-    case uXBZ:
+    case uTOCN:
         return 100;
     default:
         return 100000000;
@@ -125,9 +126,9 @@ int BitcoinUnits::decimals(int unit)
     switch (unit) {
     case TOCN:
         return 8;
-    case mXBZ:
+    case mTOCN:
         return 5;
-    case uXBZ:
+    case uTOCN:
         return 2;
     default:
         return 0;

@@ -1,7 +1,8 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers 
-// Copyright (c) 2018 The Tourium developers
+// Copyright (c) 2015-2017 The ALQO developers
+// Copyright (c) 2017-2018 The Tourium developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -119,9 +120,9 @@ void AskPassphraseDialog::accept()
                 if (model->setWalletEncrypted(true, newpass1)) {
                     QMessageBox::warning(this, tr("Wallet encrypted"),
                         "<qt>" +
-                            tr("TOCN will close now to finish the encryption process. "
+                            tr("Tourium will close now to finish the encryption process. "
                                "Remember that encrypting your wallet cannot fully protect "
-                               "your XBZs from being stolen by malware infecting your computer.") +
+                               "your Touriums from being stolen by malware infecting your computer.") +
                             "<br><br><b>" +
                             tr("IMPORTANT: Any previous backups you have made of your wallet file "
                                "should be replaced with the newly generated, encrypted wallet file. "

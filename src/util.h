@@ -2,7 +2,8 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers 
-// Copyright (c) 2018 The Tourium developers
+// Copyright (c) 2015-2017 The ALQO developers
+// Copyright (c) 2017-2018 The Tourium developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -30,14 +31,14 @@
 #include <boost/filesystem/path.hpp>
 #include <boost/thread/exceptions.hpp>
 
-//TOCN only features
+//Tourium only features
 
 extern bool fMasterNode;
 extern bool fLiteMode;
 extern bool fEnableInstantX;
 extern int nInstantXDepth;
 extern int nDarksendRounds;
-extern int nAnonymizeXBZAmount;
+extern int nAnonymizeAmount;
 extern int nLiquidityProvider;
 extern bool fEnableDarksend;
 extern int64_t enforceMasternodePaymentsTime;
@@ -113,7 +114,7 @@ void AllocateFileRange(FILE* file, unsigned int offset, unsigned int length);
 bool RenameOver(boost::filesystem::path src, boost::filesystem::path dest);
 bool TryCreateDirectory(const boost::filesystem::path& p);
 boost::filesystem::path GetDefaultDataDir();
-const boost::filesystem::path& GetDataDir(bool fNetSpecific = true);
+const boost::filesystem::path& GetDataDir();
 boost::filesystem::path GetConfigFile();
 boost::filesystem::path GetMasternodeConfigFile();
 #ifndef WIN32

@@ -2,7 +2,8 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers 
-// Copyright (c) 2018 The Tourium developers
+// Copyright (c) 2015-2017 The ALQO developers
+// Copyright (c) 2017-2018 The Xuma developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -17,7 +18,6 @@
 #include "chain.h"
 #include "chainparams.h"
 #include "coins.h"
-
 #include "net.h"
 #include "pow.h"
 #include "primitives/block.h"
@@ -454,7 +454,6 @@ bool TestBlockValidity(CValidationState& state, const CBlock& block, CBlockIndex
 bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** pindex, CDiskBlockPos* dbp = NULL);
 bool AcceptBlockHeader(const CBlockHeader& block, CValidationState& state, CBlockIndex** ppindex = NULL);
 
-CTxOut GetPrevOut(const COutPoint& out);
 
 class CBlockFileInfo
 {

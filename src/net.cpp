@@ -2,7 +2,8 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers 
-// Copyright (c) 2018 The Tourium developers
+// Copyright (c) 2015-2017 The ALQO developers
+// Copyright (c) 2017-2018 The Tourium developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -563,7 +564,7 @@ void CNode::copyStats(CNodeStats& stats)
         nPingUsecWait = GetTimeMicros() - nPingUsecStart;
     }
 
-    // Raw ping time is in microseconds, but show it to user as whole seconds (TOCN users should be well used to small numbers with many decimal places by now :)
+    // Raw ping time is in microseconds, but show it to user as whole seconds (Tourium users should be well used to small numbers with many decimal places by now :)
     stats.dPingTime = (((double)nPingUsecTime) / 1e6);
     stats.dPingWait = (((double)nPingUsecWait) / 1e6);
 
@@ -1020,7 +1021,7 @@ void ThreadMapPort()
             }
         }
 
-        string strDesc = "TOCN " + FormatFullVersion();
+        string strDesc = "Tourium " + FormatFullVersion();
 
         try {
             while (true) {
@@ -1095,7 +1096,7 @@ void ThreadDNSAddressSeed()
         MilliSleep(11 * 1000);
 
         LOCK(cs_vNodes);
-        if (vNodes.size() >= 3) {
+        if (vNodes.size() >= 2) {
             LogPrintf("P2P peers available. Skipped DNS seeding.\n");
             return;
         }
@@ -1112,24 +1113,15 @@ void ThreadDNSAddressSeed()
         } else {
             vector<CNetAddr> vIPs;
             vector<CAddress> vAdd;
-
-            int port = 0;
-            string host = seed.host;
-            SplitHostPort(host, port, host);
-
-            if (LookupHost(host.c_str(), vIPs)) {
+            if (LookupHost(seed.host.c_str(), vIPs)) {
                 BOOST_FOREACH (CNetAddr& ip, vIPs) {
                     int nOneDay = 24 * 3600;
-                    //ZERO24X: Modified these lines to support ports in seednodes
-                    CAddress addr = CAddress(CService(ip, port));
+                    CAddress addr = CAddress(CService(ip, Params().GetDefaultPort()));
                     addr.nTime = GetTime() - 3 * nOneDay - GetRand(4 * nOneDay); // use a random age between 3 and 7 days old
                     vAdd.push_back(addr);
-
-                    OpenNetworkConnection(addr, NULL, addr.ToStringIPPort().c_str());
                     found++;
                 }
             }
-
             addrman.Add(vAdd, CNetAddr(seed.name, true));
         }
     }
@@ -1248,8 +1240,8 @@ void ThreadOpenConnections()
                 continue;
 
             // do not allow non-default ports, unless after 50 invalid addresses selected already
-            //if (addr.GetPort() != Params().GetDefaultPort() && nTries < 50)
-            //    continue;
+            if (addr.GetPort() != Params().GetDefaultPort() && nTries < 50)
+                continue;
 
             addrConnect = addr;
             break;

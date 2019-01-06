@@ -1,12 +1,12 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers 
-// Copyright (c) 2018 The Tourium developers
+// Copyright (c) 2015-2017 The ALQO developers
+// Copyright (c) 2017-2018 The Tourium developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "masternode.h"
 #include "addrman.h"
-#include "main.h"
 #include "masternodeman.h"
 #include "Darksend.h"
 #include "sync.h"
@@ -82,7 +82,6 @@ CMasternode::CMasternode()
     lastTimeChecked = 0;
     nLastDsee = 0;  // temporary, do not save. Remove after migration to v12
     nLastDseep = 0; // temporary, do not save. Remove after migration to v12
-    collateral = 0;
 }
 
 CMasternode::CMasternode(const CMasternode& other)
@@ -108,7 +107,6 @@ CMasternode::CMasternode(const CMasternode& other)
     lastTimeChecked = 0;
     nLastDsee = other.nLastDsee;   // temporary, do not save. Remove after migration to v12
     nLastDseep = other.nLastDseep; // temporary, do not save. Remove after migration to v12
-    collateral = other.collateral;
 }
 
 CMasternode::CMasternode(const CMasternodeBroadcast& mnb)
@@ -134,7 +132,6 @@ CMasternode::CMasternode(const CMasternodeBroadcast& mnb)
     lastTimeChecked = 0;
     nLastDsee = 0;  // temporary, do not save. Remove after migration to v12
     nLastDseep = 0; // temporary, do not save. Remove after migration to v12
-    collateral = GetPrevOut(mnb.vin.prevout).nValue;
 }
 
 //
@@ -193,7 +190,6 @@ uint256 CMasternode::CalculateScore(int mod, int64_t nBlockHeight)
 
 void CMasternode::Check(bool forceCheck)
 {
-    LOCK(cs);
     if (ShutdownRequested()) return;
 
     if (!forceCheck && (GetTime() - lastTimeChecked < MASTERNODE_CHECK_SECONDS)) return;
@@ -418,7 +414,7 @@ bool CMasternodeBroadcast::Create(std::string strService, std::string strKeyMast
         return false;
     }
 
-    /*CService service = CService(strService);
+    CService service = CService(strService);
     int mainnetDefaultPort = Params(CBaseChainParams::MAIN).GetDefaultPort();
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         if (service.GetPort() != mainnetDefaultPort) {
@@ -430,7 +426,7 @@ bool CMasternodeBroadcast::Create(std::string strService, std::string strKeyMast
         strErrorRet = strprintf("Invalid port %u for masternode %s, %d is the only supported on mainnet.", service.GetPort(), strService, mainnetDefaultPort);
         LogPrintf("CMasternodeBroadcast::Create -- %s\n", strErrorRet);
         return false;
-    }*/
+    }
 
     return Create(txin, CService(strService), keyCollateralAddressNew, pubKeyCollateralAddressNew, keyMasternodeNew, pubKeyMasternodeNew, strErrorRet, mnbRet);
 }
@@ -443,7 +439,6 @@ bool CMasternodeBroadcast::Create(CTxIn txin, CService service, CKey keyCollater
     LogPrint("masternode", "CMasternodeBroadcast::Create -- pubKeyCollateralAddressNew = %s, pubKeyMasternodeNew.GetID() = %s\n",
         CBitcoinAddress(pubKeyCollateralAddressNew.GetID()).ToString(),
         pubKeyMasternodeNew.GetID().ToString());
-
 
     CMasternodePing mnp(txin);
     if (!mnp.Sign(keyMasternodeNew, pubKeyMasternodeNew)) {
@@ -521,11 +516,10 @@ bool CMasternodeBroadcast::CheckAndUpdate(int& nDos)
         return false;
     }
 
-    /*
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         if (addr.GetPort() != 15110) return false;
     } else if (addr.GetPort() == 15110)
-        return false;*/
+        return false;
 
     //search existing Masternode list, this is where we update existing Masternodes with new mnb broadcasts
     CMasternode* pmn = mnodeman.Find(vin);

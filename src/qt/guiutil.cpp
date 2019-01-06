@@ -1,12 +1,12 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers 
-// Copyright (c) 2018 The Tourium developers
+// Copyright (c) 2015-2017 The ALQO developers
+// Copyright (c) 2017-2018 The Tourium developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "guiutil.h"
-#include "bitcoinunits.h"
 
 #include "bitcoinaddressvalidator.h"
 #include "bitcoinunits.h"
@@ -79,7 +79,7 @@ extern double NSAppKitVersionNumber;
 #endif
 #endif
 
-#define URI_SCHEME "tourium"
+#define URI_SCHEME "TOCN"
 
 namespace GUIUtil
 {
@@ -112,7 +112,7 @@ void setupAddressWidget(QValidatedLineEdit* widget, QWidget* parent)
 #if QT_VERSION >= 0x040700
     // We don't want translators to use own addresses in translations
     // and this is the only place, where this address is supplied.
-    widget->setPlaceholderText(QObject::tr("Enter a TOCN address (e.g. %1)").arg("D7VFR83SQbiezrW72hjcWJtcfip5krte2Z"));
+    widget->setPlaceholderText(QObject::tr("Enter a Tourium address (e.g. %1)").arg("XLd5zb7KJewkBNH7xb94r9WHUVrxKiXLcS"));
 #endif
     widget->setValidator(new BitcoinAddressEntryValidator(parent));
     widget->setCheckValidator(new BitcoinAddressCheckValidator(parent));
@@ -129,7 +129,7 @@ void setupAmountWidget(QLineEdit* widget, QWidget* parent)
 
 bool parseBitcoinURI(const QUrl& uri, SendCoinsRecipient* out)
 {
-    // return if URI is not valid or is no TOCN: URI
+    // return if URI is not valid or is no TOCN:URI
     if (!uri.isValid() || uri.scheme() != QString(URI_SCHEME))
         return false;
 
@@ -181,9 +181,9 @@ bool parseBitcoinURI(const QUrl& uri, SendCoinsRecipient* out)
 
 bool parseBitcoinURI(QString uri, SendCoinsRecipient* out)
 {
-    // Convert tourium:// to tourium:
+    // Convert TOCN:// to TOCN:
     //
-    //    Cannot handle this later, because tourium:// will cause Qt to see the part after // as host,
+    //    Cannot handle this later, because TOCN:// will cause Qt to see the part after // as host,
     //    which will lower-case it (and thus invalidate the address).
     if (uri.startsWith(URI_SCHEME "://", Qt::CaseInsensitive)) {
         uri.replace(0, std::strlen(URI_SCHEME) + 3, URI_SCHEME ":");
@@ -580,42 +580,15 @@ bool DHMSTableWidgetItem::operator<(QTableWidgetItem const& item) const
     return value < rhs->value;
 }
 
-CAmountTableWidgetItem::CAmountTableWidgetItem(const CAmount amount) : QTableWidgetItem(),
-                                                                  value(amount)
-{
-    QString res;
-    if (amount > 0)
-    {
-        res = BitcoinUnits::floorWithUnit(BitcoinUnits::TOCN, amount);
-    }
-    else
-    {
-        res = QString::fromStdString("UNKNOWN");
-    }
-
-    this->setText(res);
-}
-
-bool CAmountTableWidgetItem::operator<(QTableWidgetItem const& item) const
-{
-    CAmountTableWidgetItem const* rhs =
-        dynamic_cast<CAmountTableWidgetItem const*>(&item);
-
-    if (!rhs)
-        return QTableWidgetItem::operator<(item);
-
-    return value < rhs->value;
-}
-
 #ifdef WIN32
 boost::filesystem::path static StartupShortcutPath()
 {
-    return GetSpecialFolderPath(CSIDL_STARTUP) / "TOCN.lnk";
+    return GetSpecialFolderPath(CSIDL_STARTUP) / "Tourium.lnk";
 }
 
 bool GetStartOnSystemStartup()
 {
-    // check for TOCN.lnk
+    // check for Tourium.lnk
     return boost::filesystem::exists(StartupShortcutPath());
 }
 
@@ -728,7 +701,7 @@ bool SetStartOnSystemStartup(bool fAutoStart)
         // Write a tourium.desktop file to the autostart directory:
         optionFile << "[Desktop Entry]\n";
         optionFile << "Type=Application\n";
-        optionFile << "Name=TOCN\n";
+        optionFile << "Name=Tourium\n";
         optionFile << "Exec=" << pszExePath << " -min\n";
         optionFile << "Terminal=false\n";
         optionFile << "Hidden=false\n";
@@ -747,7 +720,7 @@ bool SetStartOnSystemStartup(bool fAutoStart)
 LSSharedFileListItemRef findStartupItemInList(LSSharedFileListRef list, CFURLRef findUrl);
 LSSharedFileListItemRef findStartupItemInList(LSSharedFileListRef list, CFURLRef findUrl)
 {
-    // loop through the list of startup items and try to find the tourium app
+    // loop through the list of startup items and try to find the Tourium app
     CFArrayRef listSnapshot = LSSharedFileListCopySnapshot(list, NULL);
     for (int i = 0; i < CFArrayGetCount(listSnapshot); i++) {
         LSSharedFileListItemRef item = (LSSharedFileListItemRef)CFArrayGetValueAtIndex(listSnapshot, i);
@@ -781,7 +754,7 @@ bool SetStartOnSystemStartup(bool fAutoStart)
     LSSharedFileListItemRef foundItem = findStartupItemInList(loginItems, bitcoinAppUrl);
 
     if (fAutoStart && !foundItem) {
-        // add tourium app to startup item list
+        // add Tourium app to startup item list
         LSSharedFileListInsertItemURL(loginItems, kLSSharedFileListItemBeforeFirst, NULL, NULL, bitcoinAppUrl, NULL, NULL);
     } else if (!fAutoStart && foundItem) {
         // remove item

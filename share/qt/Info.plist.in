@@ -17,7 +17,7 @@
   <string>APPL</string>
 
   <key>CFBundleGetInfoString</key>
-  <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@, Copyright © 2009-@COPYRIGHT_YEAR@ The Bitcoin Core developers, 2014-@COPYRIGHT_YEAR@ The Dash and PIVX Core Developers, @COPYRIGHT_YEAR@ The Tourium Core developers</string>
+  <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@, Copyright © 2009-@COPYRIGHT_YEAR@ The Bitcoin Core developers, 2014-@COPYRIGHT_YEAR@ The Dash and PIVX Core Developers, 2017-@COPYRIGHT_YEAR@ The ALQO Core developers, 2017-@COPYRIGHT_YEAR@ The Tourium Core developers</string>
 
   <key>CFBundleShortVersionString</key>
   <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@</string>
@@ -32,7 +32,7 @@
   <string>Tourium-Qt</string>
 
   <key>CFBundleIdentifier</key>
-  <string>io.tourium.Tourium-Qt</string>
+  <string>org.touriumcoin.Tourium-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -40,7 +40,7 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>io.tourium.TouriumPayment</string>
+      <string>org.touriumcoin.TouriumPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
         <string>tourium</string>
@@ -52,7 +52,7 @@
   <array>
     <dict>
       <key>UTTypeIdentifier</key>
-      <string>io.tourium.paymentrequest</string>
+      <string>org.touriumcoin.paymentrequest</string>
       <key>UTTypeDescription</key>
       <string>Tourium payment request</string>
       <key>UTTypeConformsTo</key>
@@ -78,7 +78,7 @@
       <string>Editor</string>
       <key>LSItemContentTypes</key>
       <array>
-        <string>io.tourium.paymentrequest</string>
+        <string>org.touriumcoin.paymentrequest</string>
       </array>
       <key>LSHandlerRank</key>
       <string>Owner</string>

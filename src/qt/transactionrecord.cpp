@@ -1,7 +1,8 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers 
-// Copyright (c) 2018 The Tourium developers
+// Copyright (c) 2015-2017 The ALQO developers
+// Copyright (c) 2017-2018 The Tourium developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -83,7 +84,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
                 sub.credit = txout.nValue;
                 sub.involvesWatchAddress = mine & ISMINE_WATCH_ONLY;
                 if (ExtractDestination(txout.scriptPubKey, address) && IsMine(*wallet, address)) {
-                    // Received by TOCN Address
+                    // Received by Tourium Address
                     sub.type = TransactionRecord::RecvWithAddress;
                     sub.address = CBitcoinAddress(address).ToString();
                 } else {
@@ -94,12 +95,27 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
                 if (wtx.IsCoinBase()) {
                     // Generated
                     sub.type = TransactionRecord::Generated;
-
-                    if (wtx.nIndex == 0 && wtx.vout.size() >= 2) {
-                        sub.type = TransactionRecord::MNReward;
-                    }
-
                 }
+				
+				int nHeight = chainActive.Height();
+				int64_t nSubsidy;
+
+				if(nHeight > 0 && nHeight <= 40999) {
+					nSubsidy = 200 * COIN;
+					if(nSubsidy / 100 * 20 == txout.nValue) {
+						sub.type = TransactionRecord::MNReward;
+					}
+				} else if (nHeight > 40999 && nHeight <= 88999) {
+					nSubsidy = 200 * COIN;
+					if(nSubsidy / 100 * 75 == txout.nValue) {
+						sub.type = TransactionRecord::MNReward;
+					}
+				} else if (nHeight > 88999) { // 299999 => LAST POW BLOCK
+					nSubsidy = 150 * COIN;
+					if(nSubsidy / 100 * 75 == txout.nValue) {
+						sub.type = TransactionRecord::MNReward;
+					}
+				}
 
                 parts.append(sub);
             }
@@ -149,7 +165,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
                 sub.type = TransactionRecord::Obfuscated;
                 CTxDestination address;
                 if (ExtractDestination(wtx.vout[0].scriptPubKey, address)) {
-                    // Sent to TOCN Address
+                    // Sent to Tourium Address
                     sub.address = CBitcoinAddress(address).ToString();
                 } else {
                     // Sent to IP, or other non-address transaction like OP_EVAL
@@ -192,7 +208,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
 
                 CTxDestination address;
                 if (ExtractDestination(txout.scriptPubKey, address)) {
-                    // Sent to TOCN Address
+                    // Sent to Tourium Address
                     sub.type = TransactionRecord::SendToAddress;
                     sub.address = CBitcoinAddress(address).ToString();
                 } else {

@@ -1,6 +1,7 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers 
-// Copyright (c) 2018 The Tourium developers
+// Copyright (c) 2015-2017 The ALQO developers
+// Copyright (c) 2017-2018 The Tourium developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -489,6 +490,10 @@ void CBudgetManager::FillBlockPayee(CMutableTransaction& txNew, CAmount nFees, b
             CTxDestination address1;
             ExtractDestination(payee, address1);
             CBitcoinAddress address2(address1);
+            LogPrint("masternode","CBudgetManager::FillBlockPayee - Budget payment to %s for %lld, nHighestCount = %d\n", address2.ToString(), nAmount, nHighestCount);
+        }
+        else {
+            LogPrint("masternode","CBudgetManager::FillBlockPayee - No Budget payment, nHighestCount = %d\n", nHighestCount);
         }
     } else {
         //miners get the full amount on these blocks
@@ -698,7 +703,6 @@ std::vector<CBudgetProposal*> CBudgetManager::GetBudget()
     int nBlockEnd = nBlockStart + GetBudgetPaymentCycleBlocks() - 1;
     CAmount nTotalBudget = GetTotalBudget(nBlockStart);
 
-
     std::vector<std::pair<CBudgetProposal*, int> >::iterator it2 = vBudgetPorposalsSort.begin();
     while (it2 != vBudgetPorposalsSort.end()) {
         CBudgetProposal* pbudgetProposal = (*it2).first;
@@ -790,12 +794,11 @@ CAmount CBudgetManager::GetTotalBudget(int nHeight)
 {
     if (chainActive.Tip() == NULL) return 0;
 
-    if (Params().NetworkID() == CBaseChainParams::TESTNET) {
-        CAmount nSubsidy = 500 * COIN;
-        return ((nSubsidy / 100) * 10) * 146;
-    }
-	return GetBlockValue(nHeight) * 0.1;
+    //get block value and calculate from that
+    CAmount nSubsidy = GetBlockValue(nHeight);
 
+    // Amount of blocks in a months period of time (using 1 minute per) = (60*24*30)
+    return ((nSubsidy / 100) * 10) * 60 * 24 * 30;
 }
 
 void CBudgetManager::NewBlock()

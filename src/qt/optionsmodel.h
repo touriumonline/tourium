@@ -43,8 +43,8 @@ public:
         ThreadsScriptVerif,  // int
         DatabaseCache,       // int
         SpendZeroConfChange, // bool
-        DarksendRounds,   // int
-        AnonymizeXBZAmount, //int
+        DarksendRounds,      // int
+        AnonymizeAmount,     // int
         ShowMasternodesTab,  // bool
         Listen,              // bool
         OptionIDRowCount,
@@ -90,7 +90,7 @@ private:
 signals:
     void displayUnitChanged(int unit);
     void DarksendRoundsChanged(int);
-    void anonymizeXBZAmountChanged(int);
+    void anonymizeAmountChanged(int);
     void coinControlFeaturesChanged(bool);
 };
 

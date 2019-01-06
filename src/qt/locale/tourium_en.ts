@@ -80,12 +80,12 @@
     </message>
     <message>
         <location line="+7"/>
-        <source>These are your TOCN addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Tourium addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>These are your TOCN addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Tourium addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -221,7 +221,7 @@
     </message>
     <message>
         <location line="+12"/>
-        <source>TOCN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XBZs from being stolen by malware infecting your computer.</source>
+        <source>Tourium will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Touriums from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -307,7 +307,7 @@
     </message>
     <message>
         <location line="+6"/>
-        <source>Enter a TOCN Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <source>Enter a Tourium Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -318,7 +318,7 @@
     </message>
     <message>
         <location line="-355"/>
-        <source>The TOCN address to sign the message with</source>
+        <source>The Tourium address to sign the message with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -360,7 +360,7 @@
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this TOCN address</source>
+        <source>Sign the message to prove you own this Tourium address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -391,12 +391,12 @@
     </message>
     <message>
         <location line="+25"/>
-        <source>The TOCN address the message was signed with</source>
+        <source>The Tourium address the message was signed with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+29"/>
-        <source>Verify the message to ensure it was signed with the specified TOCN address</source>
+        <source>Verify the message to ensure it was signed with the specified Tourium address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -781,12 +781,12 @@
     </message>
     <message>
         <location line="-665"/>
-        <source>Send coins to a TOCN address</source>
+        <source>Send coins to a Tourium address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+11"/>
-        <source>Request payments (generates QR codes and capracoin: URIs)</source>
+        <source>Request payments (generates QR codes and TOCN:URIs)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -811,17 +811,17 @@
     </message>
     <message>
         <location line="+10"/>
-        <source>Modify configuration options for TOCN</source>
+        <source>Modify configuration options for Tourium</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>Sign messages with your TOCN addresses to prove you own them</source>
+        <source>Sign messages with your Tourium addresses to prove you own them</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified TOCN addresses</source>
+        <source>Verify messages to ensure they were signed with specified Tourium addresses</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -846,7 +846,7 @@
     </message>
     <message>
         <location line="+24"/>
-        <source>Open a TOCN: URI or payment request</source>
+        <source>Open a TOCN:URI or payment request</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -871,7 +871,7 @@
     </message>
     <message>
         <location line="+4"/>
-        <source>Show the Tourium Core help message to get a list with possible TOCN command-line options</source>
+        <source>Show the Tourium Core help message to get a list with possible Tourium command-line options</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -886,7 +886,7 @@
     </message>
     <message numerus="yes">
         <location line="+182"/>
-        <source>%n active connection(s) to TOCN network</source>
+        <source>%n active connection(s) to Tourium network</source>
         <translation type="unfinished">
             <numerusform></numerusform>
             <numerusform></numerusform>
@@ -1082,7 +1082,7 @@ Address: %4
     </message>
     <message>
         <location filename="../blockexplorer.cpp" line="+498"/>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (capracoin.conf).</source>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (tourium.conf).</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1461,7 +1461,7 @@ Address: %4
     </message>
     <message>
         <location line="+71"/>
-        <source>The entered address &quot;%1&quot; is not a valid TOCN address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid Tourium address.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1596,7 +1596,7 @@ Address: %4
     </message>
     <message>
         <location line="+10"/>
-        <source>Tourium Core will download and store a copy of the TOCN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>Tourium Core will download and store a copy of the Tourium block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1814,8 +1814,8 @@ Address: %4
     </message>
     <message>
         <location line="+16"/>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other TOCN addresses after it matures.
-To Add: enter percentage to give and TOCN address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Tourium addresses after it matures.
+To Add: enter percentage to give and Tourium address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
         <translation type="unfinished"></translation>
@@ -2022,17 +2022,17 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="-29"/>
-        <source>Darksend was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening TOCN&apos;s configuration screen.</source>
+        <source>Darksend was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Tourium&apos;s configuration screen.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+15"/>
-        <source>Darksend was successfully set to high (%1 and 8 rounds). You can change this at any time by opening TOCN&apos;s configuration screen.</source>
+        <source>Darksend was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Tourium&apos;s configuration screen.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+15"/>
-        <source>Darksend was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening TOCN&apos;s configuration screen.</source>
+        <source>Darksend was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Tourium&apos;s configuration screen.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2108,7 +2108,7 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="+33"/>
-        <source>Automatically open the TOCN client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the Tourium client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2133,12 +2133,12 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="-179"/>
-        <source>Automatically start TOCN after logging in to the system.</source>
+        <source>Automatically start Tourium after logging in to the system.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start TOCN on system login</source>
+        <source>&amp;Start Tourium on system login</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2158,7 +2158,7 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="+15"/>
-        <source>Amount of TOCN to keep anonymized</source>
+        <source>Amount of Tourium to keep anonymized</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2193,13 +2193,13 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="+192"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting TOCN.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting Tourium.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+21"/>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/capracoin-project/capracoin-project-translations</source>
+https://www.transifex.com/touriumcoin/tourium-project-translations</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2209,7 +2209,7 @@ https://www.transifex.com/capracoin-project/capracoin-project-translations</sour
     </message>
     <message>
         <location line="+17"/>
-        <source>Connect to the TOCN network through a SOCKS5 proxy.</source>
+        <source>Connect to the Tourium network through a SOCKS5 proxy.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2406,7 +2406,7 @@ https://www.transifex.com/capracoin-project/capracoin-project-translations</sour
         <location line="+10"/>
         <location line="+1015"/>
         <location line="+93"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the TOCN network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Tourium network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2693,12 +2693,12 @@ https://www.transifex.com/capracoin-project/capracoin-project-translations</sour
     </message>
     <message>
         <location line="-118"/>
-        <source>Cannot start capracoin: click-to-pay handler</source>
+        <source>Cannot start TOCN: click-to-pay handler</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+126"/>
-        <source>URI cannot be parsed! This can be caused by an invalid TOCN address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid Tourium address or malformed URI parameters.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2806,7 +2806,7 @@ https://www.transifex.com/capracoin-project/capracoin-project-translations</sour
     </message>
     <message>
         <location filename="../guiutil.cpp" line="+113"/>
-        <source>Enter a TOCN address (e.g. %1)</source>
+        <source>Enter a Tourium address (e.g. %1)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2995,7 +2995,7 @@ https://www.transifex.com/capracoin-project/capracoin-project-translations</sour
     </message>
     <message>
         <location line="+149"/>
-        <source>Open the TOCN debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the Tourium debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3202,7 +3202,7 @@ https://www.transifex.com/capracoin-project/capracoin-project-translations</sour
     </message>
     <message>
         <location line="-35"/>
-        <source>Welcome to the TOCN RPC console.</source>
+        <source>Welcome to the Tourium RPC console.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3293,12 +3293,12 @@ https://www.transifex.com/capracoin-project/capracoin-project-translations</sour
     </message>
     <message>
         <location line="-37"/>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the TOCN network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Tourium network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+23"/>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the TOCN network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Tourium network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3652,18 +3652,18 @@ https://www.transifex.com/capracoin-project/capracoin-project-translations</sour
     </message>
     <message>
         <location line="-165"/>
-        <source>If the custom fee is set to 1000 uXBZs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uXBZs in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 uXBZs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <source>If the custom fee is set to 1000 uTOCNs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uTOCNs in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 uTOCNs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>If the custom fee is set to 1000 uXBZs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uXBZs in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uXBZs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <source>If the custom fee is set to 1000 uTOCNs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uTOCNs in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uTOCNs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+33"/>
         <location line="+13"/>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for TOCN transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Tourium transactions than the network can process.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3796,7 +3796,7 @@ https://www.transifex.com/capracoin-project/capracoin-project-translations</sour
     </message>
     <message>
         <location line="+651"/>
-        <source>Warning: Invalid TOCN address</source>
+        <source>Warning: Invalid Tourium address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3935,7 +3935,7 @@ https://www.transifex.com/capracoin-project/capracoin-project-translations</sour
     </message>
     <message>
         <location line="+18"/>
-        <source>The TOCN address to send the payment to</source>
+        <source>The Tourium address to send the payment to</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3989,7 +3989,7 @@ https://www.transifex.com/capracoin-project/capracoin-project-translations</sour
     </message>
     <message>
         <location line="+10"/>
-        <source>A message that was attached to the TOCN: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the TOCN network.</source>
+        <source>A message that was attached to the TOCN:URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Tourium network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4052,7 +4052,7 @@ https://www.transifex.com/capracoin-project/capracoin-project-translations</sour
     </message>
     <message>
         <location line="+18"/>
-        <source>The TOCN address to sign the message with</source>
+        <source>The Tourium address to sign the message with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4094,17 +4094,17 @@ https://www.transifex.com/capracoin-project/capracoin-project-translations</sour
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this TOCN address</source>
+        <source>Sign the message to prove you own this Tourium address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+106"/>
-        <source>The TOCN address the message was signed with</source>
+        <source>The Tourium address the message was signed with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+37"/>
-        <source>Verify the message to ensure it was signed with the specified TOCN address</source>
+        <source>Verify the message to ensure it was signed with the specified Tourium address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5000,9 +5000,9 @@ https://www.transifex.com/capracoin-project/capracoin-project-translations</sour
     </message>
 </context>
 <context>
-    <name>capracoin-core</name>
+    <name>tourium-core</name>
     <message>
-        <location filename="../capracoinstrings.cpp" line="+12"/>
+        <location filename="../touriumstrings.cpp" line="+12"/>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation type="unfinished">(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</translation>
     </message>
@@ -5058,7 +5058,7 @@ https://www.transifex.com/capracoin-project/capracoin-project-translations</sour
     </message>
     <message>
         <location line="+3"/>
-        <source>Disable all TOCN specific functionality (Masternodes, Darksend, InstantX, Budgeting) (0-1, default: %u)</source>
+        <source>Disable all Tourium specific functionality (Masternodes, Darksend, InstantX, Budgeting) (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5243,16 +5243,16 @@ https://www.transifex.com/capracoin-project/capracoin-project-translations</sour
     </message>
     <message>
         <location line="+4"/>
-        <source>To use capracoind, or the -server option to capracoin-qt, you must set an rpcpassword in the configuration file:
+        <source>To use touriumd, or the -server option to tourium-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=capracoinrpc
+rpcuser=touriumrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;TOCN Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Tourium Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"></translation>
     </message>
@@ -5333,8 +5333,8 @@ for example: alertnotify=echo %%s | mail -s &quot;TOCN Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+3"/>
-        <source>(25791 could be used only on mainnet)</source>
-        <translation type="unfinished">(25791 could be used only on mainnet)</translation>
+        <source>(15110 could be used only on mainnet)</source>
+        <translation type="unfinished">(15110 could be used only on mainnet)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -5348,7 +5348,7 @@ for example: alertnotify=echo %%s | mail -s &quot;TOCN Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+1"/>
-        <source>(must be 25791 for mainnet)</source>
+        <source>(must be 15110 for mainnet)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5490,7 +5490,12 @@ for example: alertnotify=echo %%s | mail -s &quot;TOCN Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+1"/>
-        <source>Copyright (C) 2015-%i The Tourium Core Developers</source>
+        <source>Copyright (C) 2015-%i The ALQO Core Developers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copyright (C) 2017-%i The Tourium Core Developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6576,7 +6581,7 @@ for example: alertnotify=echo %%s | mail -s &quot;TOCN Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+12"/>
-        <source>Buy TOCN</source>
+        <source>Buy Tourium</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6589,7 +6594,7 @@ for example: alertnotify=echo %%s | mail -s &quot;TOCN Alert&quot; admin@foo.com
         <location line="-1108"/>
         <location line="+1192"/>
         <location line="+517"/>
-        <source>TOCN</source>
+        <source>Tourium</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6645,13 +6650,13 @@ for example: alertnotify=echo %%s | mail -s &quot;TOCN Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+177"/>
-        <source>Sell TOCN</source>
+        <source>Sell Tourium</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
         <location line="+1036"/>
-        <source>TOCN Available:</source>
+        <source>Tourium Available:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6681,7 +6686,7 @@ for example: alertnotify=echo %%s | mail -s &quot;TOCN Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+44"/>
-        <source>TOCN Balance:</source>
+        <source>Tourium Balance:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6691,7 +6696,7 @@ for example: alertnotify=echo %%s | mail -s &quot;TOCN Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+51"/>
-        <source>TOCN Pending:</source>
+        <source>Tourium Pending:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6701,12 +6706,12 @@ for example: alertnotify=echo %%s | mail -s &quot;TOCN Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+32"/>
-        <source>Bittrex TOCN Deposit Address:</source>
+        <source>Bittrex Tourium Deposit Address:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>Generate TOCN Deposit Address</source>
+        <source>Generate Tourium Deposit Address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

@@ -1,7 +1,8 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers 
-// Copyright (c) 2018 The Tourium developers
+// Copyright (c) 2015-2017 The ALQO developers
+// Copyright (c) 2017-2018 The Tourium developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -76,11 +77,11 @@ void OptionsModel::Init()
     if (!settings.contains("nDarksendRounds"))
         settings.setValue("nDarksendRounds", 2);
 
-    if (!settings.contains("nAnonymizeXBZAmount"))
-        settings.setValue("nAnonymizeXBZAmount", 1000);
+    if (!settings.contains("nAnonymizeAmount"))
+        settings.setValue("nAnonymizeAmount", 1000);
 
     nDarksendRounds = settings.value("nDarksendRounds").toLongLong();
-    nAnonymizeXBZAmount = settings.value("nAnonymizeXBZAmount").toLongLong();
+    nAnonymizeAmount = settings.value("nAnonymizeAmount").toLongLong();
 
     if (!settings.contains("fShowMasternodesTab"))
         settings.setValue("fShowMasternodesTab", masternodeConfig.getCount());
@@ -147,8 +148,8 @@ void OptionsModel::Init()
 
     if (settings.contains("nDarksendRounds"))
         SoftSetArg("-Darksendrounds", settings.value("nDarksendRounds").toString().toStdString());
-    if (settings.contains("nAnonymizeXBZAmount"))
-        SoftSetArg("-anonymizetouriumamount", settings.value("nAnonymizeXBZAmount").toString().toStdString());
+    if (settings.contains("nAnonymizeAmount"))
+        SoftSetArg("-anonymizeamount", settings.value("nAnonymizeAmount").toString().toStdString());
 
     language = settings.value("language").toString();
 }
@@ -159,7 +160,7 @@ void OptionsModel::Reset()
 
     // Remove all entries from our QSettings object
     settings.clear();
-    resetSettings = true; // Needed in tourium.cpp during shotdown to also remove the window positions
+    resetSettings = true; // Needed in tourium.cpp during shutdown to also remove the window positions
 
     // default setting for OptionsModel::StartAtStartup - disabled
     if (GUIUtil::GetStartOnSystemStartup())
@@ -228,8 +229,8 @@ QVariant OptionsModel::data(const QModelIndex& index, int role) const
             return settings.value("nThreadsScriptVerif");
         case DarksendRounds:
             return QVariant(nDarksendRounds);
-        case AnonymizeXBZAmount:
-            return QVariant(nAnonymizeXBZAmount);
+        case AnonymizeAmount:
+            return QVariant(nAnonymizeAmount);
         case Listen:
             return settings.value("fListen");
         default:
@@ -338,10 +339,10 @@ bool OptionsModel::setData(const QModelIndex& index, const QVariant& value, int 
             settings.setValue("nDarksendRounds", nDarksendRounds);
             emit DarksendRoundsChanged(nDarksendRounds);
             break;
-        case AnonymizeXBZAmount:
-            nAnonymizeXBZAmount = value.toInt();
-            settings.setValue("nAnonymizeXBZAmount", nAnonymizeXBZAmount);
-            emit anonymizeXBZAmountChanged(nAnonymizeXBZAmount);
+        case AnonymizeAmount:
+            nAnonymizeAmount = value.toInt();
+            settings.setValue("nAnonymizeAmount", nAnonymizeAmount);
+            emit anonymizeAmountChanged(nAnonymizeAmount);
             break;
         case CoinControlFeatures:
             fCoinControlFeatures = value.toBool();

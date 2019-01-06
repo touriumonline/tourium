@@ -62,11 +62,11 @@
         <translation>收款位址</translation>
     </message>
     <message>
-        <source>These are your TOCN addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Tourium addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>這些是你要付款過去的達世幣位址。在付錢之前，務必要檢查金額和收款位址是否正確。</translation>
     </message>
     <message>
-        <source>These are your TOCN addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Tourium addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>這些是你用來收款的達世幣位址。建議在每次交易時，都使用一個新的收款位址。</translation>
     </message>
     <message>
@@ -176,7 +176,7 @@
         <translation>確認錢包加密</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR DNET&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TOCN&lt;/b&gt;!</source>
         <translation>警告: 如果把錢包加密後又忘記密碼，你就會從此&lt;b&gt;失去其中所有的達世幣了&lt;/b&gt;！</translation>
     </message>
     <message>
@@ -188,7 +188,7 @@
         <translation>錢包已加密</translation>
     </message>
     <message>
-        <source>TOCN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your capracoins from being stolen by malware infecting your computer.</source>
+        <source>Tourium will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Touriums from being stolen by malware infecting your computer.</source>
         <translation>達世幣軟體現在要關閉，好完成加密程序。請注意，加密錢包不能完全防止入侵你的電腦的惡意程式偷取達世幣。</translation>
     </message>
     <message>
@@ -255,7 +255,7 @@
         <translation>發送(&amp;S)</translation>
     </message>
     <message>
-        <source>Send coins to a TOCN address</source>
+        <source>Send coins to a Tourium address</source>
         <translation>付錢給一個達世幣位址</translation>
     </message>
     <message>
@@ -263,7 +263,7 @@
         <translation>接收(&amp;R)</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and capracoin: URIs)</source>
+        <source>Request payments (generates QR codes and TOCN:URIs)</source>
         <translation>要求付款(產生 QR Code 和達世幣付款協議的 URI)</translation>
     </message>
     <message>
@@ -303,7 +303,7 @@
         <translation>選項(&amp;O)...</translation>
     </message>
     <message>
-        <source>Modify configuration options for TOCN</source>
+        <source>Modify configuration options for Tourium</source>
         <translation>修改達世幣軟體的設定選項</translation>
     </message>
     <message>
@@ -355,7 +355,7 @@
         <translation>簽署訊息(&amp;M)...</translation>
     </message>
     <message>
-        <source>Sign messages with your TOCN addresses to prove you own them</source>
+        <source>Sign messages with your Tourium addresses to prove you own them</source>
         <translation>用達世幣位址簽署訊息來證明位址是你的</translation>
     </message>
     <message>
@@ -363,7 +363,7 @@
         <translation>驗證訊息(&amp;V)...</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified TOCN addresses</source>
+        <source>Verify messages to ensure they were signed with specified Tourium addresses</source>
         <translation>驗證訊息是用來確定訊息是用指定的達世幣位址簽署的</translation>
     </message>
     <message>
@@ -443,7 +443,7 @@
         <translation>開啓 &amp;URI...</translation>
     </message>
     <message>
-        <source>Open a capracoin: URI or payment request</source>
+        <source>Open a TOCN:URI or payment request</source>
         <translation>開啓一個達世幣協議的 URI 或付款要求</translation>
     </message>
     <message>
@@ -463,7 +463,7 @@
         <translation>正在同步額外的數據: %p%</translation>
     </message>
     <message>
-        <source>Show the Tourium Core help message to get a list with possible TOCN command-line options</source>
+        <source>Show the Tourium Core help message to get a list with possible Tourium command-line options</source>
         <translation>顯示達世幣核心的說明訊息，來取得可用命令列選項的列表</translation>
     </message>
     <message>
@@ -487,7 +487,7 @@
         <translation>分頁工具列</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to TOCN network</source>
+        <source>%n active connection(s) to Tourium network</source>
         <translation><numerusform>%n 個運作中的達世幣網路連線</numerusform></translation>
     </message>
     <message>
@@ -860,11 +860,11 @@ Address: %4
         <translation>請選擇穩私級別。</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 1000 DNET</source>
+        <source>Use 2 separate masternodes to mix funds up to 1000 TOCN</source>
         <translation>使用2個獨立的主節點來混合最高達1000達世幣的資金</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 1000 DNET</source>
+        <source>Use 8 separate masternodes to mix funds up to 1000 TOCN</source>
         <translation>使用8個獨立的主節點來混合最高達1000達世幣的資金</translation>
     </message>
     <message>
@@ -872,15 +872,15 @@ Address: %4
         <translation>使用16個獨立的主節點</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 DNET to anonymize 1000 DNET</source>
+        <source>This option is the quickest and will cost about ~0.025 TOCN to anonymize 1000 TOCN</source>
         <translation>這個是最快的選項，將耗費約~0.025達世幣作為匿名處理1000達世幣的費用</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 DNET to anonymize 1000 DNET</source>
+        <source>This option is moderately fast and will cost about 0.05 TOCN to anonymize 1000 TOCN</source>
         <translation>這個是一般的選項，將耗費約0.05達世幣作為匿名處理1000達世幣的費用</translation>
     </message>
     <message>
-        <source>0.1 DNET per 1000 DNET you anonymize.</source>
+        <source>0.1 TOCN per 1000 TOCN you anonymize.</source>
         <translation>每1000達世幣耗費0.1達世幣作為匿名處理費用</translation>
     </message>
     <message>
@@ -892,15 +892,15 @@ Address: %4
         <translation>匿名發送配置</translation>
     </message>
     <message>
-        <source>Obfuscate was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening TOCN's configuration screen.</source>
+        <source>Obfuscate was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Tourium's configuration screen.</source>
         <translation>匿名發送已成功設置為一般(%1到2次循環)。你可以隨時打開達世幣配置窗口來修改。</translation>
     </message>
     <message>
-        <source>Obfuscate was successfully set to high (%1 and 8 rounds). You can change this at any time by opening TOCN's configuration screen.</source>
+        <source>Obfuscate was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Tourium's configuration screen.</source>
         <translation>匿名發送已成功設置為高(%1到8次循環)。你可以隨時打開達世幣配置窗口來修改。</translation>
     </message>
     <message>
-        <source>Obfuscate was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening TOCN's configuration screen.</source>
+        <source>Obfuscate was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Tourium's configuration screen.</source>
         <translation>匿名發送已成功設置為最高(%1到16次循環)。你可以隨時打開達世幣配置窗口來修改。</translation>
     </message>
 </context>
@@ -943,7 +943,7 @@ Address: %4
         <translation>編輯付款位址</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid TOCN address.</source>
+        <source>The entered address "%1" is not a valid Tourium address.</source>
         <translation>輸入的位址 %1 並不是有效的達世幣位址。</translation>
     </message>
     <message>
@@ -1052,7 +1052,7 @@ Address: %4
         <translation>因為這是程式第一次啓動，你可以選擇達世幣核心儲存資料的地方。</translation>
     </message>
     <message>
-        <source>Tourium Core will download and store a copy of the TOCN block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>Tourium Core will download and store a copy of the Tourium block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation>達世幣核心會下載並儲存一份達世幣區塊鏈的副本。至少有 %1GB 的資料會儲存到這個目錄中，並且還會持續增長。另外錢包資料也會儲存在這個目錄。</translation>
     </message>
     <message>
@@ -1118,11 +1118,11 @@ Address: %4
         <translation>主要(&amp;M)</translation>
     </message>
     <message>
-        <source>Automatically start TOCN after logging in to the system.</source>
+        <source>Automatically start Tourium after logging in to the system.</source>
         <translation>在登入系統後自動啓動達世幣軟體。</translation>
     </message>
     <message>
-        <source>&amp;Start TOCN on system login</source>
+        <source>&amp;Start Tourium on system login</source>
         <translation>系統登入時啟動達世幣(&amp;S)</translation>
     </message>
     <message>
@@ -1150,7 +1150,7 @@ Address: %4
         <translation>此金額為關閉匿名發送的門檻。</translation>
     </message>
     <message>
-        <source>Amount of TOCN to keep anonymized</source>
+        <source>Amount of Tourium to keep anonymized</source>
         <translation>保持匿名的達世幣數量</translation>
     </message>
     <message>
@@ -1170,7 +1170,7 @@ Address: %4
         <translation>接受外來連線</translation>
     </message>
     <message>
-        <source>Connect to the TOCN network through a SOCKS5 proxy.</source>
+        <source>Connect to the Tourium network through a SOCKS5 proxy.</source>
         <translation>透過 SOCKS5 代理伺服器來連線到達世幣網路。</translation>
     </message>
     <message>
@@ -1202,7 +1202,7 @@ Address: %4
         <translation>網絡(&amp;N)</translation>
     </message>
     <message>
-        <source>Automatically open the TOCN client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the Tourium client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>自動在路由器上開放達世幣的客戶端通訊埠。只有在你的路由器支援且開啓「通用即插即用」協定(UPnP)時才有作用。</translation>
     </message>
     <message>
@@ -1254,14 +1254,14 @@ Address: %4
         <translation>用戶界面語言:</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting TOCN.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting Tourium.</source>
         <translation>可以在這裡設定用戶介面的語言。這個設定在重啓達世幣軟體後才會生效。</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</source>
+https://www.transifex.com/touriumcoin/tourium-wallet-translations/</source>
         <translation>缺少相關語言或翻譯不完整？請到這裡協助翻譯
-https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</translation>
+https://www.transifex.com/touriumcoin/tourium-wallet-translations/</translation>
     </message>
     <message>
         <source>User Interface Theme:</source>
@@ -1343,7 +1343,7 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
         <translation>表單</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the TOCN network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Tourium network after a connection is established, but this process has not completed yet.</source>
         <translation>顯示的資訊可能是過期的。跟達世幣網路的連線建立後，你的錢包會自動和網路同步，但是這個步驟還沒完成。</translation>
     </message>
     <message>
@@ -1427,7 +1427,7 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
         <translation>金額和循環次數:</translation>
     </message>
     <message>
-        <source>0 DNET / 0 Rounds</source>
+        <source>0 TOCN / 0 Rounds</source>
         <translation>0 達世幣 / 0 循環次數</translation>
     </message>
     <message>
@@ -1548,7 +1548,7 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
         <translation>要求付款時發生錯誤</translation>
     </message>
     <message>
-        <source>Cannot start capracoin: click-to-pay handler</source>
+        <source>Cannot start TOCN: click-to-pay handler</source>
         <translation>無法啟動達世幣 : 點擊支付處理程序</translation>
     </message>
     <message>
@@ -1568,7 +1568,7 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
         <translation>無效的付款位址 %1</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid TOCN address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid Tourium address or malformed URI parameters.</source>
         <translation>沒辦法解析 URI 位址！可能是因為達世幣位址無效，或是 URI 參數格式錯誤。</translation>
     </message>
     <message>
@@ -1654,7 +1654,7 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
         <translation>金額</translation>
     </message>
     <message>
-        <source>Enter a TOCN address (e.g. %1)</source>
+        <source>Enter a Tourium address (e.g. %1)</source>
         <translation>輸入達世幣位址 (例如 %1)</translation>
     </message>
     <message>
@@ -1740,7 +1740,7 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
         <translation>連線數</translation>
     </message>
     <message>
-        <source>Open the TOCN debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the Tourium debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>從目前的資料目錄下開啓達世幣軟體的除錯紀錄檔。當紀錄檔很大時，可能會花好幾秒的時間。</translation>
     </message>
     <message>
@@ -1944,7 +1944,7 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
         <translation>輸出:</translation>
     </message>
     <message>
-        <source>Welcome to the TOCN RPC console.</source>
+        <source>Welcome to the Tourium RPC console.</source>
         <translation>歡迎使用達世幣 RPC 主控台。</translation>
     </message>
     <message>
@@ -2007,7 +2007,7 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
         <translation>重複使用現有的收款位址(不建議)(&amp;e)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the TOCN network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Tourium network.</source>
         <translation>附加在付款要求中的訊息，可以不填，打開要求內容時會顯示。注意: 這個訊息不會隨著付款送到達世幣網路上。</translation>
     </message>
     <message>
@@ -2019,7 +2019,7 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
         <translation>跟新收款位址關聯的標記，可以不填。</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the TOCN network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Tourium network.</source>
         <translation>附加在付款要求中的訊息，可以不填，打開要求內容時會顯示。&lt;br&gt;注意: 這個訊息不會隨著付款送到達世幣網路上。</translation>
     </message>
     <message>
@@ -2264,7 +2264,7 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
         <translation>如果自訂手續費設定為 1000 duffs ，而交易資料大小只有 250 個位元組的話，那麽選擇「每千位元組」就只會付 250 duffs 的手續費，&lt;br /&gt;而「總共至少」會支付 1000 duffs。但是如果交易資料大小超過一千個位元組，那麽兩者都是每千位元組的費用。</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for capracoin transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Tourium transactions than the network can process.</source>
         <translation>當交易量少於區塊可容納的空間時，只付最低手續費不會有什麽問題。&lt;br /&gt;但是當交易量的需求成長到超過整體網路可以處理的量時，可能會造成一筆一直不會被確認的交易。</translation>
     </message>
     <message>
@@ -2444,7 +2444,7 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
         <translation>只付最低手續費 %1</translation>
     </message>
     <message>
-        <source>Warning: Invalid TOCN address</source>
+        <source>Warning: Invalid Tourium address</source>
         <translation>警告: 無效的達世幣位址</translation>
     </message>
     <message>
@@ -2467,7 +2467,7 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
         <translation>付給:(&amp;T)</translation>
     </message>
     <message>
-        <source>The TOCN address to send the payment to</source>
+        <source>The Tourium address to send the payment to</source>
         <translation>接收付款的達世幣位址</translation>
     </message>
     <message>
@@ -2507,7 +2507,7 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
         <translation>訊息:</translation>
     </message>
     <message>
-        <source>A message that was attached to the capracoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the TOCN network.</source>
+        <source>A message that was attached to the TOCN:URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Tourium network.</source>
         <translation>附加在達世幣付款協議 URI 中的訊息，會和交易內容一起存起來，給你自己做參考。注意: 這個訊息不會送到達世幣網路上。</translation>
     </message>
     <message>
@@ -2557,7 +2557,7 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
         <translation>你可以用自己的位址簽署訊息，來證明你對位址的所有權。但是請小心，不要簽署語意含糊不清的內容，因為釣魚式詐騙可能會用騙你簽署的手法來冒充是你。只有在語句中的細節你都同意時才簽署。</translation>
     </message>
     <message>
-        <source>The TOCN address to sign the message with</source>
+        <source>The Tourium address to sign the message with</source>
         <translation>用來簽署訊息的達世幣位址</translation>
     </message>
     <message>
@@ -2589,7 +2589,7 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
         <translation>複製目前的簽章到系統剪貼簿</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this TOCN address</source>
+        <source>Sign the message to prove you own this Tourium address</source>
         <translation>簽署這個訊息來證明這個達世幣位址是你的</translation>
     </message>
     <message>
@@ -2613,11 +2613,11 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
         <translation>請在下面輸入簽署的位址，訊息(請確定完整複製了所包含的換行，空格，跳位符號等等)，以及簽章，來驗證這個訊息。請小心，除了訊息內容以外，不要對簽章本身過度解讀，以避免被用「中間人攻擊法」詐騙。</translation>
     </message>
     <message>
-        <source>The TOCN address the message was signed with</source>
+        <source>The Tourium address the message was signed with</source>
         <translation>簽署這個訊息的達世幣位址</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified TOCN address</source>
+        <source>Verify the message to ensure it was signed with the specified Tourium address</source>
         <translation>驗證這個訊息來確定是用指定的達世幣位址簽署的</translation>
     </message>
     <message>
@@ -3180,8 +3180,8 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
         <translation>付款</translation>
     </message>
     <message>
-        <source>InstantX doesn't support sending values that high yet. Transactions are currently limited to %1 DNET.</source>
-        <translation>即時到帳系統暫時並不支援這麼高的交易金額。目前的金額僅限於%1 DNET。</translation>
+        <source>InstantX doesn't support sending values that high yet. Transactions are currently limited to %1 TOCN.</source>
+        <translation>即時到帳系統暫時並不支援這麼高的交易金額。目前的金額僅限於%1 TOCN。</translation>
     </message>
 </context>
 <context>
@@ -3220,7 +3220,7 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
     </message>
 </context>
 <context>
-    <name>capracoin-core</name>
+    <name>tourium-core</name>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
         <translation>和指定的位址繫結，並且一直在指定位址聽候連線。IPv6 請用 [主機]:通訊埠 這種格式</translation>
@@ -3438,11 +3438,11 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
         <translation>錯誤: 找到不再支援的 -socks 參數。現在只支援 SOCKS5 協定的代理伺服器了，因為不再能夠指定 SOCKS 協定版本。</translation>
     </message>
     <message>
-        <source>Fees (in DNET/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <source>Fees (in TOCN/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
         <translation>當處理轉發的交易時，如果每千位元組(Kb)的手續費比這個值低，就視為沒付手續費 (預設值: %s)</translation>
     </message>
     <message>
-        <source>Fees (in DNET/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <source>Fees (in TOCN/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
         <translation>當建立交易時，如果每千位元組(Kb)的手續費比這個值低，就視為沒付手續費 (預設值: %s)</translation>
     </message>
     <message>
@@ -3530,8 +3530,12 @@ https://www.transifex.com/capracoin-crypto/capracoin-wallet-translations/</trans
         <translation>版權為位元幣核心開發人員自西元 2009 至 %i 年起所有</translation>
     </message>
     <message>
-        <source>Copyright (C) 2014-%i The Tourium Core Developers</source>
-        <translation>版權為達世幣核心開發人員自西元 2014 至 %i 年起所有</translation>
+        <source>Copyright (C) 2015-%i The ALQO Core Developers</source>
+        <translation>版權為達世幣核心開發人員自西元 2015 至 %i 年起所有</translation>
+    </message>
+    <message>
+        <source>Copyright (C) 2017-%i The Tourium Core Developers</source>
+        <translation>版權為達世幣核心開發人員自西元 2017 至 %i 年起所有</translation>
     </message>
     <message>
         <source>Could not parse -rpcbind value %s as network address</source>

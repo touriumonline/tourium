@@ -225,14 +225,7 @@ RES_ICONS = \
   qt/res/icons/tx_inout.png \
   qt/res/icons/tx_input.png \
   qt/res/icons/tx_output.png \
-  qt/res/icons/tx_mined.png \
-  qt/res/icons/tx_mn.png \
-  qt/res/icons/unit_tourium.png \
-  qt/res/icons/unit_mtourium.png \
-  qt/res/icons/unit_utourium.png \
-  qt/res/icons/unit_ttourium.png \
-  qt/res/icons/unit_tmtourium.png \
-  qt/res/icons/unit_tutourium.png
+  qt/res/icons/tx_mined.png
 
 BITCOIN_QT_CPP = \
   qt/bitcoinaddressvalidator.cpp \
@@ -417,4 +410,3 @@ moc_%.cpp: %.h
 	@test -f $(LRELEASE)
 	@$(MKDIR_P) $(@D)
 	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LRELEASE) -silent $< -qm $@
-

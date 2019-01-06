@@ -16,8 +16,8 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "TOCN"
-            VALUE "FileDescription",    "touriumd (OSS daemon/client for TOCN)"
+            VALUE "CompanyName",        "Tourium"
+            VALUE "FileDescription",    "touriumd (OSS daemon/client for Tourium)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "touriumd"
             VALUE "LegalCopyright",     COPYRIGHT_STR

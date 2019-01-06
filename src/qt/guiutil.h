@@ -30,7 +30,7 @@ class QUrl;
 class QWidget;
 QT_END_NAMESPACE
 
-/** Utility functions used by the TOCN Qt UI.
+/** Utility functions used by the Tourium Qt UI.
  */
 namespace GUIUtil
 {
@@ -38,14 +38,14 @@ namespace GUIUtil
 QString dateTimeStr(const QDateTime& datetime);
 QString dateTimeStr(qint64 nTime);
 
-// Render TOCN addresses in monospace font
+// Render Tourium addresses in monospace font
 QFont bitcoinAddressFont();
 
 // Set up widgets for address and amounts
 void setupAddressWidget(QValidatedLineEdit* widget, QWidget* parent);
 void setupAmountWidget(QLineEdit* widget, QWidget* parent);
 
-// Parse "tourium:" URI into recipient object, return true on successful parsing
+// Parse "TOCN:" URI into recipient object, return true on successful parsing
 bool parseBitcoinURI(const QUrl& uri, SendCoinsRecipient* out);
 bool parseBitcoinURI(QString uri, SendCoinsRecipient* out);
 QString formatBitcoinURI(const SendCoinsRecipient& info);
@@ -185,17 +185,6 @@ public:
 private:
     // Private backing value for DHMS string, used for sorting.
     int64_t value;
-};
-
-class CAmountTableWidgetItem : public QTableWidgetItem
-{
-public:
-    CAmountTableWidgetItem(const CAmount amount);
-    virtual bool operator<(QTableWidgetItem const& item) const;
-
-private:
-    // Private backing value for CAmount string, used for sorting.
-    CAmount value;
 };
 
 bool GetStartOnSystemStartup();

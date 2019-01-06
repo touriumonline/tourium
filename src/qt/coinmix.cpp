@@ -1,7 +1,8 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers 
-// Copyright (c) 2018 The Tourium developers
+// Copyright (c) 2015-2017 The ALQO developers
+// Copyright (c) 2017-2018 The Tourium developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 //
@@ -320,15 +321,15 @@ void Coinmix::updateDarksendProgress()
     if (!pwalletMain) return;
 
     QString strAmountAndRounds;
-    QString strAnonymizeXBZAmount = BitcoinUnits::formatHtmlWithUnit(nDisplayUnit, nAnonymizeXBZAmount * COIN, false, BitcoinUnits::separatorAlways);
+    QString strAnonymizeAmount = BitcoinUnits::formatHtmlWithUnit(nDisplayUnit, nAnonymizeAmount * COIN, false, BitcoinUnits::separatorAlways);
 
     if (currentBalance == 0) {
         ui->DarksendProgress->setValue(0);
         ui->DarksendProgress->setToolTip(tr("No inputs detected"));
 
         // when balance is zero just show info from settings
-        strAnonymizeXBZAmount = strAnonymizeXBZAmount.remove(strAnonymizeXBZAmount.indexOf("."), BitcoinUnits::decimals(nDisplayUnit) + 1);
-        strAmountAndRounds = strAnonymizeXBZAmount + " / " + tr("%n Rounds", "", nDarksendRounds);
+        strAnonymizeAmount = strAnonymizeAmount.remove(strAnonymizeAmount.indexOf("."), BitcoinUnits::decimals(nDisplayUnit) + 1);
+        strAmountAndRounds = strAnonymizeAmount + " / " + tr("%n Rounds", "", nDarksendRounds);
 
         ui->labelAmountRounds->setToolTip(tr("No inputs detected"));
         ui->labelAmountRounds->setText(strAmountAndRounds);
@@ -355,20 +356,20 @@ void Coinmix::updateDarksendProgress()
     CAmount nMaxToAnonymize = nAnonymizableBalance + currentAnonymizedBalance + nDenominatedUnconfirmedBalance;
 
     // If it's more than the anon threshold, limit to that.
-    if (nMaxToAnonymize > nAnonymizeXBZAmount * COIN) nMaxToAnonymize = nAnonymizeXBZAmount * COIN;
+    if (nMaxToAnonymize > nAnonymizeAmount * COIN) nMaxToAnonymize = nAnonymizeAmount * COIN;
 
     if (nMaxToAnonymize == 0) return;
 
-    if (nMaxToAnonymize >= nAnonymizeXBZAmount * COIN) {
+    if (nMaxToAnonymize >= nAnonymizeAmount * COIN) {
         ui->labelAmountRounds->setToolTip(tr("Found enough compatible inputs to anonymize %1")
-                                              .arg(strAnonymizeXBZAmount));
-        strAnonymizeXBZAmount = strAnonymizeXBZAmount.remove(strAnonymizeXBZAmount.indexOf("."), BitcoinUnits::decimals(nDisplayUnit) + 1);
-        strAmountAndRounds = strAnonymizeXBZAmount + " / " + tr("%n Rounds", "", nDarksendRounds);
+                                              .arg(strAnonymizeAmount));
+        strAnonymizeAmount = strAnonymizeAmount.remove(strAnonymizeAmount.indexOf("."), BitcoinUnits::decimals(nDisplayUnit) + 1);
+        strAmountAndRounds = strAnonymizeAmount + " / " + tr("%n Rounds", "", nDarksendRounds);
     } else {
         QString strMaxToAnonymize = BitcoinUnits::formatHtmlWithUnit(nDisplayUnit, nMaxToAnonymize, false, BitcoinUnits::separatorAlways);
         ui->labelAmountRounds->setToolTip(tr("Not enough compatible inputs to anonymize <span style='color:red;'>%1</span>,<br>"
                                              "will anonymize <span style='color:red;'>%2</span> instead")
-                                              .arg(strAnonymizeXBZAmount)
+                                              .arg(strAnonymizeAmount)
                                               .arg(strMaxToAnonymize));
         strMaxToAnonymize = strMaxToAnonymize.remove(strMaxToAnonymize.indexOf("."), BitcoinUnits::decimals(nDisplayUnit) + 1);
         strAmountAndRounds = "<span style='color:red;'>" +
@@ -539,7 +540,7 @@ void Coinmix::toggleDarksend()
 
         //show Darksend configuration if client has defaults set 
 
-        if (nAnonymizeXBZAmount == 0) {
+        if (nAnonymizeAmount == 0) {
             DarksendConfig dlg(this);
             dlg.setModel(walletModel);
             dlg.exec();

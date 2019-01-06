@@ -2,7 +2,8 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers 
-// Copyright (c) 2018 The Tourium developers
+// Copyright (c) 2015-2017 The ALQO developers
+// Copyright (c) 2017-2018 The Tourium developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -107,6 +108,7 @@ std::string to_internal(const std::string&);
 using namespace std;
 
 //Tourium only features
+
 bool fMasterNode = false;
 string strMasterNodePrivKey = "";
 string strMasterNodeAddr = "";
@@ -114,7 +116,7 @@ bool fLiteMode = false;
 bool fEnableInstantX = true;
 int nInstantXDepth = 5;
 int nDarksendRounds = 2;
-int nAnonymizeXBZAmount = 1000;
+int nAnonymizeAmount = 1000;
 int nLiquidityProvider = 0;
 /** Spork enforcement enabled time */
 int64_t enforceMasternodePaymentsTime = 4085657524;
@@ -445,16 +447,15 @@ boost::filesystem::path GetDefaultDataDir()
 }
 
 static boost::filesystem::path pathCached;
-static boost::filesystem::path pathCachedNetSpecific;
 static CCriticalSection csPathCached;
 
-const boost::filesystem::path& GetDataDir(bool fNetSpecific)
+const boost::filesystem::path& GetDataDir()
 {
     namespace fs = boost::filesystem;
 
     LOCK(csPathCached);
 
-    fs::path& path = fNetSpecific ? pathCachedNetSpecific : pathCached;
+    fs::path& path = pathCached;
 
     // This can be called during exceptions by LogPrintf(), so we cache the
     // value so we don't have to do memory allocations after that.
@@ -470,8 +471,7 @@ const boost::filesystem::path& GetDataDir(bool fNetSpecific)
     } else {
         path = GetDefaultDataDir();
     }
-    if (fNetSpecific)
-        path /= BaseParams().DataDir();
+    path /= BaseParams().DataDir();
 
     fs::create_directories(path);
 
@@ -481,15 +481,12 @@ const boost::filesystem::path& GetDataDir(bool fNetSpecific)
 void ClearDatadirCache()
 {
     pathCached = boost::filesystem::path();
-    pathCachedNetSpecific = boost::filesystem::path();
 }
 
 boost::filesystem::path GetConfigFile()
 {
     boost::filesystem::path pathConfigFile(GetArg("-conf", "tourium.conf"));
-    if (!pathConfigFile.is_complete())
-        pathConfigFile = GetDataDir(false) / pathConfigFile;
-
+    if (!pathConfigFile.is_complete()) pathConfigFile = GetDataDir() / pathConfigFile;
     return pathConfigFile;
 }
 

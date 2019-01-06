@@ -1,7 +1,8 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2012 The Bitcoin developers
 // Copyright (c) 2015-2017 The PIVX developers 
-// Copyright (c) 2018 The Tourium developers
+// Copyright (c) 2015-2017 The ALQO developers
+// Copyright (c) 2017-2018 The Tourium developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -35,7 +36,7 @@ void SendMoney(const CTxDestination& address, CAmount nValue, CWalletTx& wtxNew,
         throw JSONRPCError(RPC_WALLET_ERROR, strError);
     }
 
-    // Parse TOCN address
+    // Parse Tourium address
     CScript scriptPubKey = GetScriptForDestination(address);
 
     // Create and send the transaction
@@ -519,7 +520,7 @@ Value masternodelist(const Array& params, bool fHelp)
             "  activeseconds  - Print number of seconds masternode recognized by the network as enabled\n"
             "                   (since latest issued \"masternode start/start-many/start-alias\")\n"
             "  addr           - Print ip address associated with a masternode (can be additionally filtered, partial match)\n"
-            "  full           - Print info in format 'status protocol pubkey IP collateral lastseen activeseconds lastpaid'\n"
+            "  full           - Print info in format 'status protocol pubkey IP lastseen activeseconds lastpaid'\n"
             "                   (can be additionally filtered, partial match)\n"
             "  lastseen       - Print timestamp of when a masternode was last seen on the network\n"
             "  lastpaid       - The last time a node was paid on the network\n"
@@ -555,7 +556,7 @@ Value masternodelist(const Array& params, bool fHelp)
                 addrStream << setw(21) << strVin;
 
                 std::ostringstream stringStream;
-                stringStream << setw(9) << mn.Status() << " " << mn.protocolVersion << " " << CBitcoinAddress(mn.pubKeyCollateralAddress.GetID()).ToString() << " " << setw(21) << FormatMoney(mn.collateral) << " " <<mn.addr.ToString() << " " << (int64_t)mn.lastPing.sigTime << " " << setw(8) << (int64_t)(mn.lastPing.sigTime - mn.sigTime) << " " << (int64_t)mn.GetLastPaid();
+                stringStream << setw(9) << mn.Status() << " " << mn.protocolVersion << " " << CBitcoinAddress(mn.pubKeyCollateralAddress.GetID()).ToString() << " " << setw(21) << mn.addr.ToString() << " " << (int64_t)mn.lastPing.sigTime << " " << setw(8) << (int64_t)(mn.lastPing.sigTime - mn.sigTime) << " " << (int64_t)mn.GetLastPaid();
                 std::string output = stringStream.str();
                 stringStream << " " << strVin;
                 if (strFilter != "" && stringStream.str().find(strFilter) == string::npos &&

@@ -153,7 +153,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>0.1 TOCN per 10000 TOCN you anonymize.</string>
+    <string>0.1 Tourium per 10000 TOCN you anonymize.</string>
    </property>
   </widget>
   <widget class="Line" name="line">

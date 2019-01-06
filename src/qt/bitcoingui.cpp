@@ -1,7 +1,8 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers 
-// Copyright (c) 2018 The Tourium developers
+// Copyright (c) 2015-2017 The ALQO developers
+// Copyright (c) 2017-2018 The Tourium developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 ///
@@ -81,7 +82,7 @@ BitcoinGUI::BitcoinGUI(const NetworkStyle* networkStyle, QWidget* parent) : QMai
                                                                             overviewAction(0),
                                                                             historyAction(0),
                                                                             masternodeAction(0),
-																			coinmixAction(0),
+                                                                            coinmixAction(0),
                                                                             quitAction(0),
                                                                             sendCoinsAction(0),
                                                                             usedSendingAddressesAction(0),
@@ -114,7 +115,7 @@ BitcoinGUI::BitcoinGUI(const NetworkStyle* networkStyle, QWidget* parent) : QMai
 
     GUIUtil::restoreWindowGeometry("nWindow", QSize(880, 550), this);
 
-    QString windowTitle = tr("Tourium-Coin") + " - ";
+    QString windowTitle = tr("Tourium") + " - ";
 #ifdef ENABLE_WALLET
     /* if compiled with wallet support, -disablewallet can still disable the wallet */
     enableWallet = !GetBoolArg("-disablewallet", false);
@@ -304,7 +305,7 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
     tabGroup->addAction(sendCoinsAction);
 
     receiveCoinsAction = new QAction(QIcon(":/icons/receiving_addresses"), tr("&Receive"), this);
-    receiveCoinsAction->setStatusTip(tr("Request payments (generates QR codes and tourium: URIs)"));
+    receiveCoinsAction->setStatusTip(tr("Request payments (generates QR codes and TOCN:URIs)"));
     receiveCoinsAction->setToolTip(receiveCoinsAction->statusTip());
     receiveCoinsAction->setCheckable(true);
 #ifdef Q_OS_MAC
@@ -459,7 +460,7 @@ void BitcoinGUI::createActions(const NetworkStyle* networkStyle)
 	
 	///AAAA
     openAction = new QAction(QIcon(":/icons/editpaste"), tr("Open &URI..."), this);
-    openAction->setStatusTip(tr("Open a Tourium: URI or payment request"));
+    openAction->setStatusTip(tr("Open a TOCN:URI or payment request"));
     openBlockExplorerAction = new QAction(QIcon(":/icons/explorer"), tr("&Blockchain explorer"), this);
     openBlockExplorerAction->setStatusTip(tr("Block explorer window"));
 
@@ -1001,7 +1002,7 @@ void BitcoinGUI::setNumBlocks(int count)
 
 void BitcoinGUI::message(const QString& title, const QString& message, unsigned int style, bool* ret)
 {
-    QString strTitle = tr("Tourium Core"); // default title
+    QString strTitle = tr("Tourium"); // default title
     // Default to information icon
     int nMBoxIcon = QMessageBox::Information;
     int nNotifyIcon = Notificator::Information;
@@ -1026,7 +1027,7 @@ void BitcoinGUI::message(const QString& title, const QString& message, unsigned 
             break;
         }
     }
-    // Append title to "TOCN - "
+    // Append title to "Tourium - "
     if (!msgType.isEmpty())
         strTitle += " - " + msgType;
 

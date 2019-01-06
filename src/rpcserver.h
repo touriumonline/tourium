@@ -95,7 +95,7 @@ public:
 };
 
 /**
- * TOCN RPC command dispatcher.
+ * Tourium RPC command dispatcher.
  */
 class CRPCTable
 {

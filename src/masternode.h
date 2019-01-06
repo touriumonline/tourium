@@ -1,7 +1,7 @@
 
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers 
-// Copyright (c) 2018 The Tourium developers
+// Copyright (c) 2015-2017 The ALQO developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #ifndef MASTERNODE_H
@@ -143,7 +143,6 @@ public:
     int nScanningErrorCount;
     int nLastScanningErrorBlockHeight;
     CMasternodePing lastPing;
-    CAmount collateral;
 
     int64_t nLastDsee;  // temporary, do not save. Remove after migration to v12
     int64_t nLastDseep; // temporary, do not save. Remove after migration to v12
@@ -176,7 +175,6 @@ public:
         swap(first.nLastDsq, second.nLastDsq);
         swap(first.nScanningErrorCount, second.nScanningErrorCount);
         swap(first.nLastScanningErrorBlockHeight, second.nLastScanningErrorBlockHeight);
-        swap(first.collateral, second.collateral);
     }
 
     CMasternode& operator=(CMasternode from)
@@ -218,7 +216,6 @@ public:
         READWRITE(nLastDsq);
         READWRITE(nScanningErrorCount);
         READWRITE(nLastScanningErrorBlockHeight);
-        READWRITE(collateral);
     }
 
     int64_t SecondsSincePayment();
@@ -286,10 +283,6 @@ public:
 
     int64_t GetLastPaid();
     bool IsValidNetAddr();
-
-    void UpdateCollateral(CAmount newCollateral) {
-        collateral = newCollateral;
-    }
 };
 
 
